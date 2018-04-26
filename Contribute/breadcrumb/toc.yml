@@ -1,0 +1,7 @@
+- name: Docs
+  href: /
+  homepage: /
+  items:
+    - name: Przewodnik współautora
+      href: /contribute/
+      homepage: /contribute/
