@@ -8,11 +8,11 @@ ms.date: 01/04/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 62c4b234f23b470ffea33cacdfc469fbd7e526bd
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="install-content-authoring-tools"></a>Instalowanie narzędzi do tworzenia zawartości
 
@@ -22,9 +22,9 @@ W tym artykule opisano kroki interaktywnego instalowania narzędzi klienta Git i
 > * [Instalowanie narzędzia Visual Studio Code](https://code.visualstudio.com/)
 
 >[!IMPORTANT]
-> Jeśli wprowadzasz tylko drobne zmiany do artykułu, *nie musisz* wykonywać kroków opisanych w tym artykule i możesz przejść bezpośrednio do [przepływu pracy dla drobnych/sporadycznych zmian](light-workflow.md).
+> Jeśli wprowadzasz tylko drobne zmiany w artykule, *nie musisz* wykonywać kroków opisanych w tym artykule i możesz przejść bezpośrednio do [przepływu pracy dla drobnych zmian](index.md#quick-edits-to-existing-documents).
 >
-> Zaleca się, aby kroki te wykonali najważniejsi współautorzy. Pozwoli to na użycie [przepływu pracy dla znacznych/długofalowych zmian](full-workflow.md). Nawet jeśli masz uprawnienia do zapisu w repozytorium głównym, *zdecydowanie zalecamy rozwidlenie i sklonowanie repozytorium*, dzięki czemu będziesz mieć uprawnienia do odczytu/zapisu. Pozwoli to na przechowywanie proponowanych zmian w Twoim rozwidleniu. W tym przewodniku założono, że czynności te zostały wykonane.
+> Zaleca się, aby kroki te wykonali najważniejsi współautorzy. Pozwoli to na użycie [przepływu pracy dla znacznych/długofalowych zmian](how-to-write-workflows-major.md). Nawet jeśli masz uprawnienia do zapisu w repozytorium głównym, *zdecydowanie zalecamy rozwidlenie i sklonowanie repozytorium*, dzięki czemu będziesz mieć uprawnienia do odczytu/zapisu. Pozwoli to na przechowywanie proponowanych zmian w Twoim rozwidleniu. W tym przewodniku założono, że czynności te zostały wykonane.
 
 ## <a name="install-git-client-tools-on-windows"></a>Instalowanie narzędzi klienckich usługi Git w systemie Windows
 
