@@ -8,11 +8,11 @@ ms.date: 01/18/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: d9c7211641fb05aaca8a76e10c7216ff61a5d23c
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: f702d0d29ee7dc9c69cb26b79bf6283d91b6b6bc
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Konfigurowanie lokalnego repozytorium Git na potrzeby dokumentacji
 
@@ -27,7 +27,7 @@ Aby rozpocząć współtworzenie zawartości, należy jeden raz wykonać poniżs
 > * Skonfigurowanie wartości zdalnego połączenia nadrzędnego
 
 > [!IMPORTANT]
-> Jeśli wprowadzasz jedynie drobne zmiany do artykułu, *nie musisz* wykonywać kroków opisanych w tym artykule. Możesz przejść bezpośrednio do [przepływu pracy dla drobnych lub sporadycznych zmian](light-workflow.md).
+> Jeśli wprowadzasz jedynie drobne zmiany do artykułu, *nie musisz* wykonywać kroków opisanych w tym artykule. Możesz przejść bezpośrednio do [przepływu pracy dla szybkich zmian](index.md#quick-edits-to-existing-documents).
 >
 
 ## <a name="overview"></a>Omówienie
@@ -46,7 +46,7 @@ Dokumentacja, która jest obsługiwana w witrynie [docs.microsoft.com](https://d
 
 1. Jeśli nie masz pewności, z którego repozytorium należy skorzystać, zajrzyj do artykułu w witrynie docs.microsoft.com, korzystając z przeglądarki sieci Web. Wybierz link **Edytuj** (ikona ołówka) w prawej górnej części tego artykułu.
 
-   ![Kliknij przycisk Edytuj, aby określić repozytorium i lokalizację pliku.](media/edit-article.png)
+   ![Kliknij przycisk Edytuj, aby określić repozytorium i lokalizację pliku.](media/index/edit-article.png)
 
 2. Ten link umożliwia przejście do lokalizacji w witrynie github.com, w której we właściwym repozytorium znajduje się odpowiedni plik Markdown. Zapisz adres URL, aby określić nazwę repozytorium.
 

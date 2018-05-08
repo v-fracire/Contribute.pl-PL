@@ -1,19 +1,18 @@
 ---
 title: Docs Authoring Pack for VS Code
-description: Pakiet rozszerzenia programu VS Code ułatwiający tworzenie dokumentów w formacie Markdown dla witryny docs.microsoft.com.
+description: W tym artykule opisano pakiet rozszerzenia programu VS Code ułatwiający tworzenie dokumentów w formacie Markdown dla witryny docs.microsoft.com.
 author: meganbradley
 ms.author: mbradley
 manager: jemash
 ms.date: 04/06/2018
-ms.article: contributor-guide
-ms.prod: n.a
-ms.service: n.a
-ms.technology: n.a
-ms.openlocfilehash: 5c857deb07e28e1f6744c895a291bf78a6acf1df
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.prod: non-product-specific
+ms.topic: contributor-guide
+ms.custom: external-contributor-guide
+ms.openlocfilehash: d0d61db2faf88598ecd2c800fb5fbe8df8ec44f5
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Docs Authoring Pack for VS Code
 
@@ -46,7 +45,7 @@ Aby uzyskać dostęp do menu rozszerzenia Docs Markdown, wpisz `ALT+M`. Możesz 
 |Obraz        |`insertImage`     |Wpisz tekst alternatywny (wymagany na potrzeby ułatwień dostępu) i wybierz go, a następnie wywołaj to polecenie, aby odfiltrować listę obsługiwanych plików obrazów w repozytorium i wybrać żądany plik. Jeśli jeszcze nie wybrano tekstu alternatywnego podczas wywoływania tego polecenia, pojawi się monit o wprowadzenie tekstu, zanim będzie można wybrać plik obrazu.|
 |Uwzględnij      |`insertInclude`   |Znajdź plik do osadzenia w bieżącym pliku.|
 |Fragment kodu      |`insertSnippet`   |Znajdź fragment kodu w repozytorium, aby osadzić go w bieżącym pliku.|
-|Wideo        |`insertVideo`     |Dodaj osadzone wideo.|
+|Filmy        |`insertVideo`     |Dodaj osadzone wideo.|
 |Podgląd      |`previewTopic`    |Wyświetl podgląd aktywnego tematu w oknie obok siebie przy użyciu rozszerzenia DocFX.  Jeśli rozszerzenie DocFX nie zostało zainstalowane lub jest zainstalowane i wyłączone, temat nie zostanie wyrenderowany.
 
 
@@ -87,7 +86,7 @@ Byli użytkownicy kodu rozszerzenia o nazwie „Gauntlet” zauważą, że pasek
 
 ## <a name="known-issues"></a>Znane problemy
 
-- [DocFX — wersja zapoznawcza] Systemy MacOS i Linux: wersja zapoznawcza rozszerzenia DocFX nie uruchamia prawidłowo podglądu (domyślnie podgląd jest przekierowywany do podglądu języka Markdown programu VS Code dla tych platform).
-- [DocFX — wersja zapoznawcza] Wszystkie platformy: niektóre przypadki składni, np. linki xref (odsyłacze) do interfejsów API, nie są renderowane prawidłowo w podglądzie. W niektórych przypadkach powoduje to powstanie luk w zawartości.
-- [Zakładki zewnętrzne] Linux: lista plików jest wyświetlana, ale nie ma widocznych nagłówków do wybrania.
-- [Funkcja Uwzględnij] Linux: lista plików jest wyświetlana, ale po dokonaniu wyboru nie zostaje dodany link.
+- DocFX — wersja zapoznawcza: w systemach MacOS i Linux wersja zapoznawcza rozszerzenia DocFX nie uruchamia prawidłowo podglądu (domyślnie podgląd jest przekierowywany do podglądu języka Markdown programu VS Code dla tych platform).
+- DocFX — wersja zapoznawcza: na wszystkich platformach niektóre przypadki składni, np. linki xref (odsyłacze) do interfejsów API, nie są renderowane prawidłowo w podglądzie. W niektórych przypadkach powoduje to powstanie luk w zawartości.
+- Zakładki zewnętrzne: w systemie Linux lista plików jest wyświetlana, ale nie ma widocznych nagłówków do wybrania.
+- Uwzględnij: w systemie Linux lista plików jest wyświetlana, ale po dokonaniu wyboru nie zostaje dodany link.

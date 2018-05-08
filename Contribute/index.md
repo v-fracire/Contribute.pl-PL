@@ -4,46 +4,68 @@ description: W tym przewodniku opisano sposób współtworzenia zawartości witr
 author: bryanla
 ms.author: bryanla
 manager: mbaldwin
-ms.date: 01/25/2018
+ms.date: 04/17/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: af07ddaaf196f6913c4c0a4816621535c3193ba0
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 1cda40c890e5b30e6e1e10f3bcee0278f8004653
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Przewodnik współautora witryny Microsoft Docs — omówienie
 
 Przewodnik współautora witryny [docs.microsoft.com](https://docs.microsoft.com) (Docs) — Zapraszamy!
 
-## <a name="about-this-guide"></a>Informacje o tym przewodniku
+Kilka naszych zestawów dokumentacji to zestawy typu „open source” hostowane w usłudze GitHub. Ten model przez cały czas wdraża coraz więcej zespołów. Nawet zestawy dokumentów, które nie działają całkowicie jako technologia typu „open source”, mają dostępne publicznie repozytoria, w których można wykonywać żądania ściągnięcia. Dzięki temu komunikacja między inżynierami projektu, zespołami ds. zawartości i naszymi klientami jest płynniejsza i ulepszona. Praca w środowisku otwartym oferuje następujące korzyści:
 
-Znajdziesz tutaj wszystkie informacje potrzebne do współtworzenia artykułów w witrynie Docs przy użyciu platformy Open Publishing Services (OPS) firmy Microsoft oraz narzędzi i procesów pomocniczych.
+- Planowanie repozytoriów typu „open source” w środowisku otwartym w celu uzyskiwania opinii na temat najbardziej potrzebnych dokumentów.
+- Przeglądanie repozytoriów typu „open source” w środowisku otwartym w celu publikowania najbardziej użytecznej zawartości w naszej pierwszej wersji.
+- Aktualizowanie repozytoriów typu „open source” w środowisku otwartym w celu ułatwienia stałego udoskonalania zawartości.
 
-Spis treści z lewej strony ma za zadanie ułatwienie rozpoczęcia pracy i umożliwienie wydajnego współtworzenia witryny Microsoft Docs. Artykuły wprowadzające zapewniają możliwość szybkiego rozpoczęcia zadań, które są wspólne dla wszystkich działań związanych ze współtworzeniem. Dalsze artykuły dotyczą konkretnych zadań. Należy skoncentrować się na sekcji, w której opisano działanie interesujące użytkownika. Wiele artykułów może również służyć jako zawartość pomocnicza, którą można zapisać jako element ulubiony lub zakładkę w przeglądarce. Udostępniamy również linki do innych witryn, które umożliwią Ci przejście do stron znajdujących się poza domeną docs.microsoft.com i poza zakresem tego przewodnika.
+Środowisko użytkownika w witrynie [docs.microsoft.com](https://docs.microsoft.com) bezpośrednio integruje przepływy pracy usługi [GitHub](https://github.com), aby jeszcze bardziej ułatwić pracę. Rozpocznij od [edytowania przeglądanego dokumentu](#quick-edits-to-existing-documents). Lub pomóż [recenzować nowe tematy](#review-open-prs) albo [tworzyć opisy problemów z jakością](#create-quality-issues).
 
-## <a name="contribution-tasks"></a>Zadania współtworzenia
+> [!IMPORTANT]
+> W przypadku wszystkich repozytoriów publikowanych w witrynie docs.microsoft.com stosowany jest [Kodeks postępowania firmy Microsoft dotyczący rozwiązań typu open source](https://opensource.microsoft.com/codeofconduct/) lub [Kodeks postępowania organizacji .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Aby uzyskać więcej informacji, zobacz [często zadawane pytania dotyczące kodu postępowania](https://opensource.microsoft.com/codeofconduct/faq/). W przypadku pytań lub komentarzy możesz też napisać na adres [opencode@microsoft.com](mailto:opencode@microsoft.com) lub [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org).<br>
+>
+> Drobne poprawki lub wyjaśnienia dotyczące dokumentacji i przykładów kodu w repozytoriach publicznych znajdują się w [Warunkach korzystania z witryny docs.microsoft.com](https://docs.microsoft.com/legal/termsofuse). Nowe lub ważne zmiany powodują wygenerowanie komentarza w żądaniu ściągnięcia z prośbą o przesłanie internetowej umowy licencyjnej współautorstwa (CLA), jeśli nie jesteś pracownikiem firmy Microsoft. Zanim zrecenzujemy lub zaakceptujemy żądanie ściągnięcia, musisz wypełnić formularz online.
 
-Istnieje kilka sposobów współtworzenia dokumentów:
+## <a name="quick-edits-to-existing-documents"></a>Szybkie edycje istniejących dokumentów
 
-- Możesz [tworzyć zagadnienia](how-to-contribute.md#create-issues) polecające nowe artykuły lub poprawiające istniejące artykuły.
-- Możesz [szybko edytować](how-to-contribute.md#quick-edits) artykuły w edytorze GitHub online, by dokonywać niewielkich zmian.
-- Możesz [przeglądać wersje robocze nowych artykułów](how-to-contribute.md#review-new-articles), aby upewnić się, że charakteryzują się odpowiednią jakością i dokładnością techniczną.
-- Możesz [tworzyć nowe artykuły](how-to-contribute.md#create-new-articles) dotyczące tematów, które chcesz wzbogacić.
-- Możesz [aktualizować](how-to-contribute.md#update-samples) lub [tworzyć](how-to-contribute.md#create-samples) przykłady w celu poprawy przykładowego kodu ilustrującego ważne pojęcia.
+Szybkie edycje usprawniają proces zgłaszania i naprawiania drobnych błędów i pominięć w dokumentach. Mimo wszelkich wysiłków drobne błędy gramatyczne i błędy pisowni przedostają się do naszych publikowanych dokumentów. Można tworzyć problemy w celu zgłaszania pomyłek, ale szybszym i prostszym sposobem naprawienia błędu jest utworzenie żądania ściągnięcia. W prawie każdym artykule jest wyświetlany przycisk edycji, taki jak pokazany na poniższym rysunku. Kliknięcie przycisku **Edytuj** spowoduje przejście do pliku źródłowego w usłudze GitHub.
 
-Wszystkie nasze repozytoria publiczne są obsługiwane w witrynie GitHub i zapisywane w języku znaczników Markdown. Aby współtworzyć:
+![Lokalizacja linku Edytuj](./media/index/edit-article.png)
 
-1. [Utwórz konto usługi GitHub](https://github.com/join), jeśli jeszcze go nie masz.
-2. Artykuły w witrynie Docs są pisane w języku znaczników o nazwie Markdown. Musisz znać podstawy składni języka [Markdown](https://daringfireball.net/projects/markdown/syntax).
+Następnie kliknij ikonę ołówka pokazaną na poniższym rysunku, aby edytować artykuł.
 
-## <a name="quick-start-to-propose-an-article-change"></a>Proponowanie zmiany artykułu — szybki start
+> [!NOTE]
+> Jeśli ikona ołówka jest nieaktywna, musisz zalogować się do konta usługi GitHub lub utworzyć nowe konto. Wprowadź zmiany w edytorze internetowym. Możesz kliknąć kartę **Podgląd zmian**, aby sprawdzić formatowanie zmiany.
 
-Jeśli chcesz jedynie szybko dokonać drobnych modyfikacji i nie masz czasu na zapoznanie się z całym przewodnikiem ani zainstalowanie narzędzi, skorzystaj z poniższych informacji podstawowych. Użyj [przepływu pracy dla edytowania w sieci Web](how-to-contribute.md#quick-edits), aby przesłać swoją pracę za pośrednictwem żądania ściągnięcia w usłudze GitHub. Edycji zawartości oraz wysłania żądania ściągnięcia dokonasz w przeglądarce.
+![Lokalizacja ikony ołówka](./media/index/editicon.png)
 
-## <a name="additional-ways-to-contribute-to-docsmicrosoftcom-content"></a>Dodatkowe sposoby współtworzenia zawartości witryny docs.microsoft.com
+Po wprowadzeniu zmian przewiń stronę w dół. Wprowadź tytuł i opis żądania ściągnięcia, a następnie kliknij pozycję **Zaproponuj zmianę pliku**, jak pokazano na poniższym rysunku:
 
-Więcej na temat różnych zadań można dowiedzieć się z naszego artykułu opisującego, [jak zostać współautorem](how-to-contribute.md).
+![proponowanie zmiany](./media/index/submit-pull-request.png)
 
+Gotowe. Członkowie zespołu ds. zawartości przejrzą i scalą żądanie ściągnięcia. Możesz otrzymać opinię z żądaniem zmian, jeśli wprowadzono większe zmiany.
+
+Interfejs użytkownika służący do edycji w usłudze GitHub reaguje na uprawnienia dotyczące repozytorium. Poprzednie obrazy są dokładne w przypadku współautorów, którzy nie mają uprawnień do zapisu w repozytorium docelowym. Usługa GitHub automatycznie tworzy rozwidlenie repozytorium docelowego na Twoim koncie. Jeśli masz uprawnienia do zapisu w repozytorium docelowym, usługa GitHub tworzy nową gałąź w tym repozytorium. Nazwa gałęzi ma format **\<identyfikator_usługi_GitHub\>-patch-n** korzystający z identyfikatora usługi GitHub oraz numerycznego identyfikatora gałęzi poprawki.
+
+Żądania ściągnięcia są używane dla wszystkich zmian, nawet w przypadku współautorów z dostępem do zapisu. Większość repozytoriów ma chronioną gałąź `master`, dlatego aktualizacje muszą być przesyłane jako żądania ściągnięcia.
+
+Środowisko edytowania w przeglądarce jest najlepsze w przypadku drobnych lub rzadko wprowadzanych zmian. Jeśli tworzysz obszerną zawartość lub używasz zaawansowanych funkcji Git (takich jak zarządzanie gałęziami i zaawansowane rozwiązywanie konfliktów scalania), musisz [utworzyć rozgałęzienie repozytorium i pracować lokalnie](how-to-write-workflows-major.md).
+
+## <a name="review-open-prs"></a>Recenzowanie otwartych żądań ściągnięcia
+
+Możesz czytać nowe tematy przed ich opublikowaniem, sprawdzając aktualnie otwarte żądania ściągnięcia. Recenzje są zgodne z procesem [przepływu usługi GitHub](https://guides.github.com/introduction/flow/). Proponowane aktualizacje lub nowe artykuły są widoczne w repozytoriach publicznych. Zapoznaj się z nimi i dodaj komentarze. Przejrzyj nasze repozytoria dokumentów i sprawdź otwarte żądania ściągnięcia w interesujących Cię obszarach. Opinie członków społeczności na temat proponowanych aktualizacji pomagają całej społeczności.
+
+## <a name="create-quality-issues"></a>Tworzenie problemów z jakością
+
+Praca nad naszymi dokumentami trwa przez cały czas. Dobrze opisane problemy pomagają nam skoncentrować wysiłki na obszarach najistotniejszych dla społeczności. Im więcej szczegółów podasz, tym bardziej pomocny będzie problem. Powiedz nam, jakich informacji szukano. Powiedz nam, których terminów wyszukiwania użyto. Jeśli nie możesz rozpocząć pracy, powiedz nam, jak chcesz zacząć eksplorowanie nieznanej technologii.
+
+Rozmowa o potrzebach rozpoczyna się od opisu problemów. Zespół ds. zawartości odpowie na te problemy, przedstawiając pomysły dotyczące treści do dodania, i poprosi o Twoją opinię. Po utworzeniu wersji próbnej poprosimy Cię o [recenzję żądania ściągnięcia](#review-open-prs).
+
+## <a name="get-more-involved"></a>Zwiększanie zaangażowania
+
+Inne tematy pomogą Ci w produktywny sposób rozpocząć współtworzenie zawartości witryny Microsoft Docs. Zawierają one objaśnienia dotyczące pracy z repozytoriami usługi GitHub, narzędziami języka znaczników Markdown oraz rozszerzeniami używanymi na platformie Microsoft Docs.
