@@ -8,11 +8,11 @@ ms.date: 06/30/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 5ad2ca323b680078c2bfd2fc4cac6fb1883c411f
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 5f7f90b69953e23833906202c739d2168b139d7e
+ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Git i GitHub — podstawy dla witryny Docs
 
@@ -80,7 +80,7 @@ Dla wygody katalog główny każdego repozytorium zwykle zawiera plik szablonu M
 
 *Żądanie ściągnięcia* oferuje współautorowi wygodny sposób proponowania zestawu zmian do zastosowania w gałęzi domyślnej. Te zmiany (znane również jako *zatwierdzenia*) są przechowywane w gałęzi współautora, dzięki czemu usługa GitHub może najpierw utworzyć model wpływu *scalania* ich z gałęzią domyślną. Żądanie ściągnięcia jest również mechanizmem przekazywania współautorowi opinii z procesu kompilacji/weryfikacji od recenzenta żądania ściągnięcia. Umożliwia to rozwiązywanie potencjalnych problemów i udzielanie odpowiedzi na ewentualne pytania przed scaleniem zmian z główną gałęzią.
 
-Istnieją dwa sposoby dodawania swojego wkładu przez żądanie ściągnięcia — zależnie od rozmiaru zmian, które chce się zaproponować. Zostaną one omówione później, w sekcjach tego przewodnika dotyczących [przepływu pracy w usłudze GitHub](light-workflow.md).
+Istnieją dwa sposoby dodawania swojego wkładu przez żądanie ściągnięcia — zależnie od rozmiaru zmian, które chce się zaproponować. Zostaną one omówione później, w sekcjach tego przewodnika dotyczących [przepływu pracy w usłudze GitHub](how-to-write-workflows-major.md).
 
 <!---- Reference links for Docs landing pages, associated GitHub repositories, and related Forums matrix. ------------------>
 <!---- PLEASE INSERT URLS IN ASCENDING SORT ORDER, AND REMOVE LOCALE SEGMENT FROM URLS (that is, en-us) FOR LOCALIZED FORUMS! -->
