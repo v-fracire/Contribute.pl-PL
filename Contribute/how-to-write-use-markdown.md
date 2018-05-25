@@ -8,17 +8,22 @@ ms.date: 07/13/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 96d00abc052c3b23ca62201dccdbe590a927e72d
-ms.sourcegitcommit: de6e6b6ca641fdd5b30eb46deee9ac3a500089ef
+ms.openlocfilehash: 041398361aef90c44bdf3a0dad4aaa2d40a38289
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Jak używać języka Markdown do tworzenia zawartości witryny Docs
 
 Artykuły w witrynie docs.microsoft.com są pisane w prostym języku znaczników o nazwie [Markdown](https://daringfireball.net/projects/markdown/), który jest łatwy do czytania i do nauczenia się. Z tego względu stał się on szybko branżowym standardem.
 
-Ponieważ zawartość witryny Docs jest przechowywana w serwisie GitHub, może korzystać z nadzbioru znaczników Markdown o nazwie [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), który oferuje dodatkowe funkcje spełniające typowe potrzeby związane z formatowaniem. Ponadto platforma Open Publishing Services (OPS) implementuje język DocFX Flavored Markdown (DFM). Język DFM jest w wysokim stopniu zgodny z językiem GitHub Flavored Markdown (GFM), dodając funkcjonalność włączania funkcji specyficznych dla dokumentów.
+Ponieważ zawartość witryny Docs jest przechowywana w serwisie GitHub, może korzystać z nadzbioru znaczników Markdown o nazwie [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), który oferuje dodatkowe funkcje spełniające typowe potrzeby związane z formatowaniem. Ponadto platforma Open Publishing Services (OPS) implementuje parser języka Markdown o nazwie Markdig. Parser Markdig jest w wysokim stopniu zgodny z językiem GitHub Flavored Markdown (GFM), dodając funkcjonalność włączania funkcji specyficznych dla dokumentów.
+
+* Parser Markdig jest szybkim, wydajnym, zgodnym ze składnią CommonMark, rozszerzalnym procesorem języka Markdown dla platformy .NET.
+* https://github.com/lunet-io/markdig
+* Lepsze wsparcie społeczności
+* Lepsza obsługa standardów
 
 ## <a name="markdown-basics"></a>Podstawy języka Markdown
 
@@ -145,7 +150,7 @@ zostanie wyświetlony jako:
 
 Więcej informacji na temat tworzenia tabel można znaleźć w następujących zasobach:
 
-- Opis [funkcji zawijania tabel](#table-wrapping) języka DFM, która może ułatwić formatowanie szerokich tabel
+- [Funkcja zawijania tabel](#table-wrapping) parsera Markdig, która może ułatwić formatowanie szerokich tabel
 - Artykuł [Organizing information with tables](https://help.github.com/articles/organizing-information-with-tables/) (Organizowanie informacji przy użyciu tabel) w serwisie GitHub
 - Aplikacja internetowa [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables)
 - [Markdown Cheatsheet, autor: Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables) (Ściągawka dotycząca języka Markdown)
@@ -161,7 +166,7 @@ Składnia języka Markdown dla linku śródwierszowego składa się z części `
 Więcej informacji na temat łączenia zawierają następujące zasoby:
 
 - [Przewodnik po składni języka Markdown](https://daringfireball.net/projects/markdown/syntax#link) (szczegóły dotyczące obsługi podstawowego łączenia w języku Markdown).
-- Sekcja [Linki](how-to-write-links.md) tego przewodnika (szczegóły dodatkowej składni łączenia oferowanej przez język DFM).
+- Sekcja [Linki](how-to-write-links.md) tego przewodnika (szczegóły dodatkowej składni łączenia oferowanej przez parser Markdig).
 
 ### <a name="code-snippets"></a>Fragmenty kodu
 
@@ -272,9 +277,9 @@ CREATE TABLE T1 (
 ## <a name="ops-custom-markdown-extensions"></a>Niestandardowe rozszerzenia języka Markdown na platformie OPS
 
 > [!NOTE]
-> Platforma Open Publishing Services (OPS) umożliwia implementowanie języka „DocFX Flavored Markdown” (DFM) o wysokim stopniu zgodności z językiem GitHub Flavored Markdown (GFM). Język DFM dodaje pewne funkcje za pośrednictwem rozszerzeń języka Markdown. Wybrane artykuły z pełnego podręcznika tworzenia platformy OPS jako takie zostały dołączone do tego przewodnika do celów informacyjnych. (Przykład można znaleźć w częściach „Rozszerzenia języków DFM i Markdown” i „Fragmenty kodu” dostępnych w spisie treści).
+> Platforma Open Publishing Services (OPS) umożliwia implementowanie parsera Markdig dla języka Markdown o wysokim stopniu zgodności z językiem GitHub Flavored Markdown (GFM). Parser Markdig dodaje pewne funkcje za pośrednictwem rozszerzeń języka Markdown. Wybrane artykuły z pełnego podręcznika tworzenia platformy OPS jako takie zostały dołączone do tego przewodnika do celów informacyjnych. (Przykład można znaleźć w częściach „Rozszerzenia parsera Markdig i języka Markdown” oraz „Fragmenty kodu” dostępnych w spisie treści).
 
-W artykułach z witryny Docs rozwiązanie GFM jest używane na potrzeby większości elementów formatowania artykułów, takich jak akapity, linki, listy i nagłówki. W celu skorzystania z bardziej zaawansowanego formatowania można w artykułach użyć funkcji rozwiązania DFM, takich jak:
+W artykułach z witryny Docs rozwiązanie GFM jest używane na potrzeby większości elementów formatowania artykułów, takich jak akapity, linki, listy i nagłówki. W celu skorzystania z bardziej zaawansowanego formatowania można w artykułach użyć funkcji parsera Markdig, takich jak:
 
 - Bloki uwag
 - Operacje dołączania
@@ -282,7 +287,7 @@ W artykułach z witryny Docs rozwiązanie GFM jest używane na potrzeby większo
 - Osadzone filmy wideo
 - Fragmenty/przykłady kodu
 
-Kompletną listę można znaleźć w częściach „Rozszerzenia języków DFM i Markdown” i „Fragmenty kodu” dostępnych w spisie treści.
+Kompletną listę można znaleźć w częściach „Rozszerzenia parsera Markdig i języka Markdown” oraz „Fragmenty kodu” dostępnych w spisie treści.
 
 ### <a name="note-blocks"></a>Bloki uwag
 
@@ -297,7 +302,7 @@ Ogólnie rzecz biorąc, bloków uwag należy używać oszczędnie, ponieważ mog
 
 ### <a name="includes"></a>Operacje dołączania
 
-Jeśli masz pliki tekstu lub obrazów do wielokrotnego użytku, które chcesz dołączyć do plików artykułu, możesz użyć odwołania do pliku dołączania za pomocą funkcji dołączania plików w języku DFM. Ta funkcja nakazuje platformie OPS dołączenie pliku do pliku artykułu podczas kompilacji, co sprawia, że plik staje się częścią publikowanego artykułu. Istnieją trzy typy operacji dołączania, które ułatwiają wielokrotne użycie zawartości:
+Jeśli masz pliki tekstu lub obrazów do wielokrotnego użytku, które chcesz dołączyć do plików artykułu, możesz użyć odwołania do pliku dołączania za pomocą funkcji dołączania plików w parserze Markdig. Ta funkcja nakazuje platformie OPS dołączenie pliku do pliku artykułu podczas kompilacji, co sprawia, że plik staje się częścią publikowanego artykułu. Istnieją trzy typy operacji dołączania, które ułatwiają wielokrotne użycie zawartości:
 
 - Śródwierszowe: wielokrotne użycie typowego fragmentu tekstu jako śródwierszowego w innym zdaniu.
 - Blokowe: wielokrotne użycie całego pliku Markdown jako bloku zagnieżdżonego w sekcji artykułu.
@@ -309,7 +314,7 @@ Poniżej przedstawiono wymagania i uwagi dotyczące operacji dołączania:
 
 - Operacji dołączania należy używać, gdy ten sam tekst ma pojawiać się w wielu artykułach.
 - Blokowe operacje dołączania są używane w przypadku znaczących ilości zawartości — akapitu lub dwóch, procedury udostępnianej lub sekcji udostępnianej. Nie należy ich używać dla części mniejszych niż zdanie.
-- Operacje dołączania nie będą renderowane w renderowanym widoku Twojego artykułu w usłudze GitHub, ponieważ korzystają z rozszerzeń języka DFM. Będą one renderowane tylko po publikacji.
+- Operacje dołączania nie będą renderowane w renderowanym widoku Twojego artykułu w usłudze GitHub, ponieważ korzystają z rozszerzeń parsera Markdig. Będą one renderowane tylko po publikacji.
 - Upewnij się, że cały tekst w operacji dołączania został napisany w postaci kompletnych zdań lub fraz, które nie zależą od poprzedniego ani następującego tekstu w artykule odwołującym się do dołączenia. Zignorowanie tej wskazówki spowoduje powstanie w artykule ciągu niemożliwego do przetłumaczenia, który zakłóci spójność zlokalizowanego tekstu.
 - Operacji dołączania nie należy osadzać w innych dołączeniach. Nie są one obsługiwane.
 - Umieść pliki multimedialne w folderze media, który jest specyficzny dla podkatalogu include — na przykład w folderze `<repo>`/includes/media. Katalog główny względem katalogu multimediów nie powinien zawierać obrazów. Jeśli dołączenie nie zawiera obrazów, odpowiadający mu katalog multimediów nie jest wymagany.
@@ -318,13 +323,13 @@ Poniżej przedstawiono wymagania i uwagi dotyczące operacji dołączania:
 
 ### <a name="selectors"></a>Selektory
 
-Selektorów należy używać w tworzonych artykułach technicznych z wieloma wariantami tego samego artykułu w celu przedstawienia różnic między implementacjami w ramach różnych technologii lub platform. Ma to przeważnie zastosowanie w przypadku mobilnej zawartości platformy dla deweloperów. Obecnie w języku DFM istnieją dwa różne typy selektorów: pojedynczy selektor i selektor wielokrotny.
+Selektorów należy używać w tworzonych artykułach technicznych z wieloma wariantami tego samego artykułu w celu przedstawienia różnic między implementacjami w ramach różnych technologii lub platform. Ma to przeważnie zastosowanie w przypadku mobilnej zawartości platformy dla deweloperów. Obecnie w parserze Markdig istnieją dwa różne typy selektorów: selektor pojedynczy i selektor wielokrotny.
 
 Ponieważ ten sam kod języka Markdown selektora znajduje się w każdym artykule w zaznaczeniu, zalecamy umieszczanie selektora artykułu w dołączeniu. Następnie można się odwołać do tego dołączenia we wszystkich artykułach, które używają tego samego selektora.
 
 ### <a name="code-snippets"></a>Fragmenty kodu
 
-Język DFM obsługuje zaawansowane dołączanie kodu do artykułu za pośrednictwem rozszerzenia fragmentu kodu. Oferuje ono zaawansowane możliwości renderowania współpracujące z funkcjami GFM, takie jak wybór języka programowania i kolorowanie składni, oraz użyteczne funkcje, takie jak:
+Parser Markdig obsługuje zaawansowane dołączanie kodu do artykułu za pośrednictwem rozszerzenia fragmentu kodu. Oferuje ono zaawansowane możliwości renderowania współpracujące z funkcjami GFM, takie jak wybór języka programowania i kolorowanie składni, oraz użyteczne funkcje, takie jak:
 
 - dołączanie scentralizowanych przykładów/fragmentów kodu z repozytorium zewnętrznego;
 - interfejs użytkownika z kartami przedstawiającymi wiele wersji przykładów kodu w różnych językach.
