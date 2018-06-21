@@ -1,19 +1,13 @@
 ---
 title: Kroki konfiguracji konta usługi GitHub
 description: W tym artykule przedstawiono procedurę konfigurowania kont usługi GitHub, która jest wymagana w celu dodawania zawartości do witryny docs.microsoft.com.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 02/27/2018
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 131736a3b12314147ae5f3f76813527d8bcd15bc
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 15fa7c11090a5c4faefe38d00d273e92c231329b
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469468"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238948"
 ---
 # <a name="github-account-setup"></a>Konfigurowanie konta usługi GitHub
 
