@@ -1,19 +1,13 @@
 ---
 title: Przewodnik stylistyczny witryny Docs — szybki start
 description: Ten artykuł zawiera zwięzły przewodnik po zagadnieniach związanych ze stylem, zawierający podstawowe tematy umożliwiające rozpoczęcie pracy z witryną docs.microsoft.com.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 07/25/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 74f78b72f61cfebddb0cb03b73a3a806f4fe4a10
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469399"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239608"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Styl i ton witryny Docs — szybki start
 
@@ -56,5 +50,6 @@ Nasze artykuły techniczne są przetłumaczone na wiele języków, a niektóre z
 ## <a name="localized-documentation"></a>Dokumentacja lokalizowana
 
 - Jeśli uczestniczysz we współtworzeniu lokalizowanej dokumentacji, skorzystaj z witryny [Microsoft Language Portal](https://www.microsoft.com/Language/Default.aspx).
-- W celu uzyskania wskazówek odnośnie do lokalizacji, informacji dotyczących stylu i jego użycia w publikacjach technicznych oraz informacji dotyczących formatów danych charakterystycznych dla danego rynku pobierz [Przewodnik stylistyczny](https://www.microsoft.com/Language/StyleGuides.aspx) w swoim języku.
-- W przypadku lokalizowanej terminologii firmy Microsoft szukaj sekcji [Zatwierdzona terminologia odnosząca się do produktów](https://www.microsoft.com/Language/Search.aspx) lub pobierz zbiór terminologii [Microsoft Terminology Collection](https://www.microsoft.com/Language/Terminology.aspx) w swoim języku.
+- W celu uzyskania wskazówek odnośnie do lokalizacji, informacji dotyczących stylu i jego użycia w publikacjach technicznych oraz informacji dotyczących formatów danych charakterystycznych dla danego rynku pobierz [Przewodnik stylistyczny](https://www.microsoft.com/Language/StyleGuides) w swoim języku.
+- W przypadku lokalizowanej terminologii firmy Microsoft szukaj sekcji [Zatwierdzona terminologia odnosząca się do produktów](https://www.microsoft.com/Language/Default.aspx) lub pobierz zbiór terminologii [Microsoft Terminology Collection](https://www.microsoft.com/Language/Terminology.aspx) w swoim języku.
+- Więcej informacji możesz znaleźć w [sekcji dotyczącej lokalizacji](https://docs.microsoft.com/style-guide/global-communications/) przewodnika stylistycznego firmy Microsoft.

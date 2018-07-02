@@ -1,19 +1,13 @@
 ---
 title: Jak używać linków w dokumentacji
 description: Ten artykuł zawiera instrukcje dotyczące tworzenia linków do zawartości w witrynie docs.microsoft.com.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 06/29/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 1699e57ac6a4dc4c5a1ef099ea183b3cbc6307cd
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469537"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239731"
 ---
 # <a name="using-links-in-documentation"></a>Używanie linków w dokumentacji
 W tym artykule opisano, jak używać hiperlinków na stronach hostowanych w witrynie docs.microsoft.com. Linki można łatwo dodawać do znaczników markdown za pomocą kilku różnych konwencji. Linki wskazują użytkownikom zawartość na tej samej stronie, na stronach sąsiednich lub wskazują zewnętrzne witryny i adresy URL.
@@ -63,7 +57,10 @@ Aby utworzyć link w treści artykułu technicznego witryny Docs do innego artyk
   `[link text](../directory/article-name.md)`
 
 - Artykuł zawierający linki między zestawami dokumentów (nawet jeśli są tym samym repozytorium): `[link text](./directory/article-name)`
-  
+
+> [!IMPORTANT]
+> Element `~/` nie jest używany jako część linku w żadnym z powyższych przykładów. W przypadku łączenia z ścieżką w katalogu głównym repozytorium rozpocznij od znaku `/`. Uwzględnienie elementu `~/` powoduje utworzenie nieprawidłowych linków podczas poruszania się między repozytoriami źródłowymi w witrynie GitHub. Rozpoczęcie ścieżki od znaki `/` umożliwia jej prawidłowe rozpoznanie.
+
 ## <a name="links-to-anchors"></a>Linki do kotwic
 
 Nie musisz tworzyć kotwic. Są one generowane automatycznie dla wszystkich nagłówków H2 w momencie publikacji. Musisz tylko utworzyć linki do sekcji H2.
