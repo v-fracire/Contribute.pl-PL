@@ -2,22 +2,22 @@
 title: Przewodnik stylistyczny witryny Docs — szybki start
 description: Ten artykuł zawiera zwięzły przewodnik po zagadnieniach związanych ze stylem, zawierający podstawowe tematy umożliwiające rozpoczęcie pracy z witryną docs.microsoft.com.
 ms.date: 07/25/2017
-ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239608"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40243028"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Styl i ton witryny Docs — szybki start
 
-Z tym przewodnikiem Szybki start można się zapoznać w krótkim czasie. Daje on dobry pogląd na sposób zastosowania najistotniejszych zasad stylistycznych podczas pisania artykułów do witryny docs.microsoft.com. Te wskazówki odnoszą się do zarówno do tworzenia nowej dokumentacji, jak i aktualizowania istniejącej.
+Ten przewodnik Szybki start zawiera skrócone instrukcje dotyczące pisania zawartości technicznej do publikowania w witrynie docs.microsoft.com. Te wskazówki odnoszą się do zarówno do tworzenia nowej dokumentacji, jak i aktualizowania istniejącej.
 
-W ramach absolutnego minimum przestrzegaj poniższych zasad:
+Najlepsze rozwiązania:
 
 - Sprawdzaj pisownię i gramatykę w swoich artykułach, nawet jeśli trzeba je skopiować i wkleić do programu Word, aby to zrobić.
 - Używaj swobodnego i przyjaznego tonu — jak w rozmowie z inną osobą.
-- Używaj prostych zdań. Są one łatwiejsze do zrozumienia oraz sprawiają mniej kłopotów w tłumaczeniu — zarówno przez człowieka, jak i automat tłumaczący.
+- Używaj prostych zdań. Dzięki prostym do zrozumienia zdaniom czytelnik może szybko rozpocząć korzystanie z udostępnionych wskazówek.
 
 ## <a name="use-the-microsoft-voice-principles"></a>Korzystaj z zasad firmy Microsoft dotyczących tonu
 

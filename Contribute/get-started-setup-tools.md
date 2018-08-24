@@ -5,18 +5,18 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 00631485f1f4eed9e0de2f6df98d973a819dfe4d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238925"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251443"
 ---
 # <a name="install-content-authoring-tools"></a>Instalowanie narzędzi do tworzenia zawartości
 
 W tym artykule opisano kroki interaktywnego instalowania narzędzi klienta Git i Visual Studio Code.
 > [!div class="checklist"]
-> * Instalowanie programu [Git dla systemu Windows](https://git-scm.com/download/win)
+> * Instalowanie usługi [Git](https://git-scm.com/)
 > * [Instalowanie narzędzia Visual Studio Code](https://code.visualstudio.com/)
 > * Instalowane pakietu [Docs Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)
 
@@ -25,9 +25,13 @@ W tym artykule opisano kroki interaktywnego instalowania narzędzi klienta Git i
 >
 > Zaleca się, aby kroki te wykonali najważniejsi współautorzy. Pozwoli to na użycie [przepływu pracy dla znacznych/długofalowych zmian](how-to-write-workflows-major.md). Nawet jeśli masz uprawnienia do zapisu w repozytorium głównym, *zdecydowanie zalecamy rozwidlenie i sklonowanie repozytorium*, dzięki czemu będziesz mieć uprawnienia do odczytu/zapisu. Pozwoli to na przechowywanie proponowanych zmian w Twoim rozwidleniu. W tym przewodniku założono, że czynności te zostały wykonane.
 
-## <a name="install-git-client-tools-on-windows"></a>Instalowanie narzędzi klienckich usługi Git w systemie Windows
+## <a name="install-git-client-tools"></a>Instalowanie narzędzi klienckich dla systemu Git 
 
- Zainstaluj najnowszą wersję [narzędzi klienckich dla systemu Git organizacji Software Freedom Conservancy](https://git-scm.com/download/). Ta instalacja obejmuje system kontroli wersji Git oraz powłokę Git Bash, czyli aplikację wiersza polecenia służącą do interakcji z lokalnym repozytorium Git.
+ Zainstaluj najnowszą wersję [narzędzi klienckich usługi Git organizacji Software Freedom Conservancy](https://git-scm.com/download/) dla swojej platformy. 
+
+* [Git dla systemu Windows](https://git-scm.com/download/win). Ta instalacja obejmuje system kontroli wersji Git oraz powłokę Git Bash, czyli aplikację wiersza polecenia służącą do interakcji z lokalnym repozytorium Git.
+* Usługa Git dla komputerów Mac jest dostarczana jako jedno z narzędzi wiersza polecenia programu Xcode. Uruchom polecenie `git` z wiersza polecenia. W razie potrzeby zostanie wyświetlony monit o zainstalowanie narzędzi wiersza polecenia. Usługę [Git dla komputerów Mac](https://git-scm.com/download/mac) można również pobrać z witryny organizacji Software Freedom Conservancy.
+* [Git dla systemów Linux i Unix](https://git-scm.com/download/linux)
 
 Jeśli wolisz graficzny interfejs użytkownika od interfejsu wiersza polecenia, zobacz [stronę z informacjami o dostępnych klientach z graficznym interfejsem użytkownika organizacji Software Freedom Conservancy](https://git-scm.com/downloads/guis) i zapoznaj się z takimi popularnymi rozwiązaniami, jak [program GitHub Desktop dla usługi GitHub](https://desktop.github.com/) lub [edytor Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx).
 

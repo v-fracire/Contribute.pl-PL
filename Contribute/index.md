@@ -5,18 +5,18 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: a0c52fea8f3a57cdfe89c2cd7a24ef7b511ada7c
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239774"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251442"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Przewodnik współautora witryny Microsoft Docs — omówienie
 
 Przewodnik współautora witryny [docs.microsoft.com](https://docs.microsoft.com) (Docs) — Zapraszamy!
 
-Kilka naszych zestawów dokumentacji to zestawy typu „open source” hostowane w usłudze GitHub. Ten model przez cały czas wdraża coraz więcej zespołów. Nawet zestawy dokumentów, które nie działają całkowicie jako technologia typu „open source”, mają dostępne publicznie repozytoria, w których można wykonywać żądania ściągnięcia. Dzięki temu komunikacja między inżynierami projektu, zespołami ds. zawartości i naszymi klientami jest płynniejsza i ulepszona. Praca w środowisku otwartym oferuje następujące korzyści:
+Kilka naszych zestawów dokumentacji to zestawy typu „open source” hostowane w usłudze GitHub. Coraz więcej zespołów w firmie Microsoft przez cały czas wdraża ten model. Nawet zestawy dokumentów, które nie działają całkowicie jako technologia typu „open source”, mają dostępne publicznie repozytoria, w których można wykonywać żądania ściągnięcia. Dzięki temu komunikacja między inżynierami projektu, zespołami ds. zawartości i naszymi klientami jest płynniejsza i ulepszona. Praca w środowisku otwartym oferuje następujące korzyści:
 
 - Planowanie repozytoriów typu „open source” w środowisku otwartym w celu uzyskiwania opinii na temat najbardziej potrzebnych dokumentów.
 - Przeglądanie repozytoriów typu „open source” w środowisku otwartym w celu publikowania najbardziej użytecznej zawartości w naszej pierwszej wersji.
