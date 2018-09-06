@@ -6,14 +6,14 @@ author: syntaxc4
 manager: erifkin
 ms.date: 07/24/2018
 ms.author: cfowler
-zone_pivot_groups: keyvault-languages, keyvault-platforms
+zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8b758274203748bb6e04c03dec5de38fb77947b4
-ms.sourcegitcommit: b0105f322f91bb4dbde47f6da35b3c12271d5b03
+ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43239554"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308829"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>Szybki start: konfigurowanie i pobieranie wpisów tajnych z usługi Azure Key Vault
 
@@ -29,24 +29,17 @@ W tym przewodniku Szybki start przedstawiono sposób przechowywania wpisu tajneg
 
 Przed kontynuowaniem upewnij się, że znasz [podstawowe pojęcia](https://docs.microsoft.com/azure/key-vault/key-vault-whatis#basic-concepts).
 
->[!NOTE]
-Aby przekonać się, dlaczego poniższy samouczek jest najlepszym rozwiązaniem, najpierw należy zapoznać się z kilkoma pojęciami. Usługa Key Vault to centralne repozytorium do programistycznego przechowywania wpisów tajnych. W tym celu aplikacje i użytkownicy muszą najpierw uwierzytelnić się w usłudze Key Vault, tj. podać wpis tajny. Zgodnie z najlepszymi rozwiązaniami dotyczącymi bezpieczeństwa pierwszy wpis tajny musi być okresowo obracany. Jednak aplikacje [tożsamości usługi zarządzanej](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview) uruchamiane na platformie Azure otrzymują tożsamość, która jest automatycznie zarządzana przez tę platformę. Dzięki temu można rozwiązać **początkowy problem dotyczący wpisu tajnego**, gdzie użytkownicy i aplikacje mogą postępować zgodnie z najlepszymi praktykami i nie muszą pamiętać o obracaniu pierwszego wpisu tajnego
+> [!NOTE]
+> Aby przekonać się, dlaczego poniższy samouczek jest najlepszym rozwiązaniem, najpierw należy zapoznać się z kilkoma pojęciami. Usługa Key Vault to centralne repozytorium do programistycznego przechowywania wpisów tajnych. W tym celu aplikacje i użytkownicy muszą najpierw uwierzytelnić się w usłudze Key Vault, tj. podać wpis tajny. Zgodnie z najlepszymi rozwiązaniami dotyczącymi bezpieczeństwa pierwszy wpis tajny musi być okresowo obracany. Jednak aplikacje [tożsamości usługi zarządzanej](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview) uruchamiane na platformie Azure otrzymują tożsamość, która jest automatycznie zarządzana przez tę platformę. Dzięki temu można rozwiązać **początkowy problem dotyczący wpisu tajnego**, gdzie użytkownicy i aplikacje mogą postępować zgodnie z najlepszymi praktykami i nie muszą pamiętać o obracaniu pierwszego wpisu tajnego
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end
-
-::: zone pivot="dotnet, windows"
+* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
 * [Visual Studio 2017 w wersji 15.7.3 lub nowszej](https://www.microsoft.com/net/download/windows) z następującymi obciążeniami:
   * Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowej
   * Tworzenie aplikacji dla wielu platform w środowisku .NET Core
 * [Zestaw .NET Core 2.1 SDK lub nowszy](https://www.microsoft.com/net/download/windows) :::zone-end
-
-::: zone pivot="dotnet, mac"
-* Zobacz [Co nowego w programie Visual Studio dla komputerów Mac](https://visualstudio.microsoft.com/vs/mac/).
-:::zone-end
-
 * Git ([pobieranie](https://git-scm.com/downloads)).
 * Subskrypcja platformy Azure. Jeśli nie masz subskrypcji platformy Azure, przed rozpoczęciem utwórz [bezpłatne konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 * [Interfejs wiersza polecenia platformy Azure](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) w wersji 2.0.4 lub nowszej. Jest on dostępny w systemach Windows, Mac i Linux.
@@ -168,10 +161,10 @@ Poniżej przedstawiono kilka wymaganych kroków
     ```bash
     git remote add azure <url>
     ```
+    
 ::: zone-end
 
 ::: zone pivot="dotnet"
-
 ## <a name="open-and-edit-the-solution"></a>Otwieranie i edytowanie rozwiązania
 
 Edytuj plik program.cs, aby uruchomić przykład z określoną nazwą magazynu kluczy.
@@ -197,7 +190,6 @@ Opublikuj tę aplikację na platformie Azure, aby sprawdzić, jak działa na ży
 5. Wybierz pozycję **Utwórz**.
 
 >[!VIDEO https://sec.ch9.ms/ch9/e93d/a6ac417f-2e63-4125-a37a-8f34bf0fe93d/KeyVault_high.mp4]
-
 ::: zone-end
 
 ## <a name="enable-managed-service-identities"></a>Włączanie tożsamości usługi zarządzanej
@@ -242,7 +234,9 @@ git push azure master
 ```
 
 Po wykonaniu tej czynności podczas przeglądania witryny https://<nazwa_aplikacji>.azurewebsites.net zobaczysz wartość wpisu tajnego.
-Upewnij się, że nazwa <YourKeyVaultName> została zastąpiona nazwą Twojego magazynu ::: zone-end
+Upewnij się, że nazwa <YourKeyVaultName> została zastąpiona nazwą magazynu
+
+::: zone-end
 
 ::: zone pivot="dotnet" Teraz po uruchomieniu aplikacji powinna pojawić się pobrana wartość wpisu tajnego.
 ::: zone-end
