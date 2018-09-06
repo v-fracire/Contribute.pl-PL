@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 94fad6f4b2faeefff687eb57cd2de8a0fb5bbbf3
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251442"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308898"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Przewodnik współautora witryny Microsoft Docs — omówienie
 
@@ -31,7 +31,7 @@ Kilka naszych zestawów dokumentacji to zestawy typu „open source” hostowane
 
 ## <a name="quick-edits-to-existing-documents"></a>Szybkie edycje istniejących dokumentów
 
-Szybkie edycje usprawniają proces zgłaszania i naprawiania drobnych błędów i pominięć w dokumentach. Mimo wszelkich wysiłków drobne błędy gramatyczne i błędy pisowni przedostają się do naszych publikowanych dokumentów. Można tworzyć problemy w celu zgłaszania pomyłek, ale szybszym i prostszym sposobem naprawienia błędu jest utworzenie żądania ściągnięcia. W prawie każdym artykule jest wyświetlany przycisk edycji, taki jak pokazany na poniższym rysunku. Kliknięcie przycisku **Edytuj** spowoduje przejście do pliku źródłowego w usłudze GitHub.
+Szybkie edycje usprawniają proces zgłaszania i naprawiania drobnych błędów i pominięć w dokumentach. Mimo wszelkich wysiłków drobne błędy gramatyczne i błędy pisowni przedostają się do naszych publikowanych dokumentów. Można tworzyć problemy w celu zgłaszania pomyłek, ale szybszym i prostszym sposobem naprawienia błędu jest utworzenie żądania ściągnięcia. W prawie każdym artykule jest wyświetlany przycisk edycji, taki jak pokazany na poniższym rysunku. Kliknięcie przycisku **Edytuj** (lub lokalizowanego odpowiednika) spowoduje przejście do pliku źródłowego w usłudze GitHub.
 
 ![Lokalizacja linku Edytuj](./media/index/edit-article.png)
 
@@ -46,6 +46,12 @@ Po wprowadzeniu zmian przewiń stronę w dół. Wprowadź tytuł i opis żądani
 
 ![proponowanie zmiany](./media/index/submit-pull-request.png)
 
+Teraz, po zaproponowaniu zmiany, musisz poprosić właścicieli repozytorium, aby „ściągnęli” Twoje zmiany do swojego repozytorium. Można to zrobić za pomocą tak zwanego „żądania ściągnięcia”. Po kliknięciu pozycji **Zaproponuj zmianę pliku** na powyższym rysunku, trafiasz na nową stronę, która wygląda, jak na poniższym rysunku:
+
+![tworzenie żądania ściągnięcia](media/index/create-pull-request.png)
+
+Kliknij pozycję **Utwórz żądanie ściągnięcia**, wprowadź tytuł (oraz opcjonalnie opis) żądania ściągnięcia, a następnie ponownie kliknij opcję **Utwórz żądanie ściągnięcia**.
+
 Gotowe. Członkowie zespołu ds. zawartości przejrzą i scalą żądanie ściągnięcia. Możesz otrzymać opinię z żądaniem zmian, jeśli wprowadzono większe zmiany.
 
 Interfejs użytkownika służący do edycji w usłudze GitHub reaguje na uprawnienia dotyczące repozytorium. Poprzednie obrazy są dokładne w przypadku współautorów, którzy nie mają uprawnień do zapisu w repozytorium docelowym. Usługa GitHub automatycznie tworzy rozwidlenie repozytorium docelowego na Twoim koncie. Jeśli masz uprawnienia do zapisu w repozytorium docelowym, usługa GitHub tworzy nową gałąź w tym repozytorium. Nazwa gałęzi ma format **\<identyfikator_usługi_GitHub\>-patch-n** korzystający z identyfikatora usługi GitHub oraz numerycznego identyfikatora gałęzi poprawki.
@@ -53,6 +59,12 @@ Interfejs użytkownika służący do edycji w usłudze GitHub reaguje na uprawni
 Żądania ściągnięcia są używane dla wszystkich zmian, nawet w przypadku współautorów z dostępem do zapisu. Większość repozytoriów ma chronioną gałąź `master`, dlatego aktualizacje muszą być przesyłane jako żądania ściągnięcia.
 
 Środowisko edytowania w przeglądarce jest najlepsze w przypadku drobnych lub rzadko wprowadzanych zmian. Jeśli tworzysz obszerną zawartość lub używasz zaawansowanych funkcji Git (takich jak zarządzanie gałęziami i zaawansowane rozwiązywanie konfliktów scalania), musisz [utworzyć rozgałęzienie repozytorium i pracować lokalnie](how-to-write-workflows-major.md).
+
+> [!NOTE]
+> Jeśli ta opcja jest włączona, możesz edytować artykuł w **dowolnym języku**, po czym, zależnie od rodzaju edycji, dojdzie do następującej sytuacji:
+> 1. każda zmiana lingwistyczna, która została zaaprobowana, przyczyni się również do ulepszenia naszego aparatu tłumaczenia maszynowego;
+> 2. każda edycja, która znacząco modyfikuje treść artykułu, zostanie wewnętrznie potraktowana jako źródło zmiany do tego samego artykułu w języku angielskim, dzięki czemu – jeśli zostanie zaaprobowana – zostanie ona lokalizowana we wszystkich językach.
+> A zatem zasugerowane przez Ciebie poprawki nie tylko wpłyną pozytywnie na artykuły napisane w Twoim języku, ale również na artykuły we wszystkich dostępnych językach.
 
 ## <a name="review-open-prs"></a>Recenzowanie otwartych żądań ściągnięcia
 
