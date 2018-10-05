@@ -2,12 +2,12 @@
 title: Jak używać linków w dokumentacji
 description: Ten artykuł zawiera instrukcje dotyczące tworzenia linków do zawartości w witrynie docs.microsoft.com.
 ms.date: 06/29/2017
-ms.openlocfilehash: dad0460cfb36594c17cef1b079c5fc14191f56f7
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 92c23f2b91c67d7a1695c5f1e5dcdc80a8517f6e
+ms.sourcegitcommit: 37cd16636d7dcfc5222ef5a5d60e4ff30f74485c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251446"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48030938"
 ---
 # <a name="using-links-in-documentation"></a>Używanie linków w dokumentacji
 W tym artykule opisano, jak używać hiperlinków na stronach hostowanych w witrynie docs.microsoft.com. Linki można łatwo dodawać do znaczników markdown za pomocą kilku różnych konwencji. Linki wskazują użytkownikom zawartość na tej samej stronie, na stronach sąsiednich lub wskazują zewnętrzne witryny i adresy URL.
@@ -158,7 +158,7 @@ Część zawierająca &lt;krótką nazwę&gt; jest opcjonalna. Jeśli zostanie p
 Jeśli użyjesz tych adresów URL, nastąpi przekierowanie do najnowszej wersji zawartości. Dzięki temu nie trzeba określać krótkiej nazwy (monikera) wersji. I nie będziesz mieć linków do zawartości koncepcyjnej, które muszą być aktualizowane po zmianie wersji.
 
 Aby utworzyć prawidłowy link, znajdź w przeglądarce stronę, do której chcesz utworzyć ten link, i skopiuj adres URL.
-Następnie usuń ciąg „https://docs.microsoft.com” i informacje o ustawieniach regionalnych.
+Następnie usuń ciąg ´ „https://docs.microsoft.com” ´ i informacje o ustawieniach regionalnych.
 
 Tworząc link ze spisu treści, musisz użyć pełnego adresu URL bez informacji o ustawieniach regionalnych.
 
