@@ -2,12 +2,12 @@
 title: Przewodnik stylistyczny witryny Docs — szybki start
 description: Ten artykuł zawiera zwięzły przewodnik po zagadnieniach związanych ze stylem, zawierający podstawowe tematy umożliwiające rozpoczęcie pracy z witryną docs.microsoft.com.
 ms.date: 07/25/2017
-ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
+ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40243028"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084404"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Styl i ton witryny Docs — szybki start
 
@@ -15,7 +15,7 @@ Ten przewodnik Szybki start zawiera skrócone instrukcje dotyczące pisania zawa
 
 Najlepsze rozwiązania:
 
-- Sprawdzaj pisownię i gramatykę w swoich artykułach, nawet jeśli trzeba je skopiować i wkleić do programu Word, aby to zrobić.
+- Sprawdzaj pisownię i gramatykę w swoich artykułach, nawet jeśli trzeba je w tym celu skopiować i wkleić do programu Microsoft Word.
 - Używaj swobodnego i przyjaznego tonu — jak w rozmowie z inną osobą.
 - Używaj prostych zdań. Dzięki prostym do zrozumienia zdaniom czytelnik może szybko rozpocząć korzystanie z udostępnionych wskazówek.
 
@@ -45,11 +45,11 @@ Nasze artykuły techniczne są przetłumaczone na wiele języków, a niektóre z
 - W przypadku kroków zawierających fragmenty kodu dodatkowe informacje dotyczące kroku wprowadź do kodu w formie komentarza. Pozwala to na zmniejszenie ilości tekstu, który trzeba przeczytać. Kluczowe informacje trafiają do projektu kodu, gdzie będą później przypominać, jakie jest zastosowanie danego kodu.
 - We wszystkich tytułach i nagłówkach stosuj wielkość liter jak w zdaniach.
 - Używaj zwrotu „sign in”, a nie „log in”.
-- Używaj słów „w następujący sposób” lub „poniższe” w każdym zdaniu poprzedzającym listę lub fragment kodu.
+- Więcej wytycznych można znaleźć w [przewodniku redakcyjno-stylistycznym firmy Microsoft](https://docs.microsoft.com/style-guide/welcome).
 
 ## <a name="localized-documentation"></a>Dokumentacja lokalizowana
 
 - Jeśli uczestniczysz we współtworzeniu lokalizowanej dokumentacji, skorzystaj z witryny [Microsoft Language Portal](https://www.microsoft.com/Language/Default.aspx).
 - W celu uzyskania wskazówek odnośnie do lokalizacji, informacji dotyczących stylu i jego użycia w publikacjach technicznych oraz informacji dotyczących formatów danych charakterystycznych dla danego rynku pobierz [Przewodnik stylistyczny](https://www.microsoft.com/Language/StyleGuides) w swoim języku.
 - W przypadku lokalizowanej terminologii firmy Microsoft szukaj sekcji [Zatwierdzona terminologia odnosząca się do produktów](https://www.microsoft.com/Language/Default.aspx) lub pobierz zbiór terminologii [Microsoft Terminology Collection](https://www.microsoft.com/Language/Terminology.aspx) w swoim języku.
-- Więcej informacji możesz znaleźć w [sekcji dotyczącej lokalizacji](https://docs.microsoft.com/style-guide/global-communications/) przewodnika stylistycznego firmy Microsoft.
+- Więcej informacji na temat lokalizacji można znaleźć w sekcji dotyczącej komunikacji globalnej w [przewodniku redakcyjno-stylistycznym firmy Microsoft](https://docs.microsoft.com/style-guide/global-communications).

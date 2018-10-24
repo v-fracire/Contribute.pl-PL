@@ -1,0 +1,14 @@
+items:
+- name: Dokumentacja usługi walidacji żądania ściągnięcia
+  href: index.md
+  items:
+  - name: Linki dla poszczególnych ustawień regionalnych
+    href: locale-specific-links.md
+  - name: Nagłówki języka Markdown
+    href: markdown-headings.md
+ms.openlocfilehash: bcf6b4c712b9f73787875119326f15393dd7ca26
+ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084575"
