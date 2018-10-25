@@ -2,12 +2,12 @@
 title: Przewodnik stylistyczny witryny Docs — szybki start
 description: Ten artykuł zawiera zwięzły przewodnik po zagadnieniach związanych ze stylem, zawierający podstawowe tematy umożliwiające rozpoczęcie pracy z witryną docs.microsoft.com.
 ms.date: 07/25/2017
-ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: f5c32d3fb71ef3513c68b9c506c823997bfe4d8f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084404"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805597"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Styl i ton witryny Docs — szybki start
 
@@ -51,5 +51,5 @@ Nasze artykuły techniczne są przetłumaczone na wiele języków, a niektóre z
 
 - Jeśli uczestniczysz we współtworzeniu lokalizowanej dokumentacji, skorzystaj z witryny [Microsoft Language Portal](https://www.microsoft.com/Language/Default.aspx).
 - W celu uzyskania wskazówek odnośnie do lokalizacji, informacji dotyczących stylu i jego użycia w publikacjach technicznych oraz informacji dotyczących formatów danych charakterystycznych dla danego rynku pobierz [Przewodnik stylistyczny](https://www.microsoft.com/Language/StyleGuides) w swoim języku.
-- W przypadku lokalizowanej terminologii firmy Microsoft szukaj sekcji [Zatwierdzona terminologia odnosząca się do produktów](https://www.microsoft.com/Language/Default.aspx) lub pobierz zbiór terminologii [Microsoft Terminology Collection](https://www.microsoft.com/Language/Terminology.aspx) w swoim języku.
+- W przypadku lokalizowanej terminologii firmy Microsoft szukaj sekcji [Zatwierdzona terminologia odnosząca się do produktów](https://www.microsoft.com/Language/Default.aspx) lub pobierz zbiór terminologii [Microsoft Terminology Collection](https://www.microsoft.com/language/Terminology) w swoim języku.
 - Więcej informacji na temat lokalizacji można znaleźć w sekcji dotyczącej komunikacji globalnej w [przewodniku redakcyjno-stylistycznym firmy Microsoft](https://docs.microsoft.com/style-guide/global-communications).
