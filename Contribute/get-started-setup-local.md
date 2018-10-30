@@ -3,14 +3,13 @@ title: Konfigurowanie lokalnego repozytorium Git
 description: Ten artykuł zawiera wskazówki dotyczące tworzenia lokalnego repozytorium Git i współtworzenia dokumentacji, z uwzględnieniem procesów tworzenia rozwidlenia i klonowania.
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 01/18/2018
-ms.openlocfilehash: 2ad0de552d481e2460ca0f56570181e33d0a6608
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238994"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805682"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Konfigurowanie lokalnego repozytorium Git na potrzeby dokumentacji
 
@@ -60,7 +59,7 @@ Dokumentacja, która jest obsługiwana w witrynie [docs.microsoft.com](https://d
 ## <a name="fork-the-repository"></a>Utworzenie rozwidlenia repozytorium
 Korzystając z odpowiedniego repozytorium, utwórz rozwidlenie repozytorium do własnego konta usługi GitHub przy użyciu witryny usługi GitHub.
 
-Osobiste rozwidlenie jest wymagane, ponieważ wszystkie repozytoria główne dokumentacji oferują dostęp tylko do odczytu, co oznacza, że nie możesz wprowadzać zmian bezpośrednio w zawartości repozytoriów. W celu dokonania zmian musisz przesłać do repozytorium głównego [żądanie ściągnięcia](git-github-fundamentals.md#pull-requests) ze swojego rozwidlenia. Aby wykonać ten proces, najpierw musisz dysponować swoją własną kopią repozytorium, do której masz prawa do zapisu. Do tego służy *rozwidlenie* GitHub.
+Wymagane jest osobiste rozwidlenie, ponieważ wszystkie repozytoria główne dokumentacji oferują dostęp tylko do odczytu. W celu dokonania zmian musisz przesłać do repozytorium głównego [żądanie ściągnięcia](git-github-fundamentals.md#pull-requests) ze swojego rozwidlenia. Aby wykonać ten proces, najpierw musisz dysponować swoją własną kopią repozytorium, do której masz prawa do zapisu. Do tego służy *rozwidlenie* GitHub.
 
 1. Przejdź do strony GitHub repozytorium głównego i naciśnij przycisk **Fork** (Rozwidlenie) w prawym górnym rogu.
 

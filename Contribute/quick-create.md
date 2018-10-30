@@ -8,20 +8,20 @@ ms.date: 07/24/2018
 ms.author: cfowler
 zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.openlocfilehash: 497631fe46ac4e2c9c495a609547753a84d662bf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805751"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>Szybki start: konfigurowanie i pobieranie wpisów tajnych z usługi Azure Key Vault
 
-W tym przewodniku Szybki start przedstawiono sposób przechowywania wpisu tajnego w usłudze Key Vault oraz pobierania go przy użyciu aplikacji internetowej. Aby wyświetlić wartość wpisu tajnego, musisz uruchomić ją na platformie Azure. W tym przewodniku Szybki start używana jest platforma Node.js oraz tożsamości usługi zarządzanej (MSI)
+W tym przewodniku Szybki start przedstawiono sposób przechowywania wpisu tajnego w usłudze Key Vault oraz pobierania go przy użyciu aplikacji internetowej. Aby wyświetlić wartość wpisu tajnego, musisz uruchomić ją na platformie Azure. W tym przewodniku Szybki start używane są platforma Node.js oraz tożsamości usługi zarządzanej.
 
 > [!div class="checklist"]
 > * Tworzenie usługi Key Vault.
-> * Przechowywanie wpisu tajnego w usłudze Key Vault.
+> * Zapisywanie wpisu tajnego w usłudze Key Vault.
 > * Pobieranie wpisu tajnego z usługi Key Vault.
 > * Tworzenie aplikacji internetowej platformy Azure.
 > * [Włączanie tożsamości usługi zarządzanej](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview).
@@ -30,16 +30,19 @@ W tym przewodniku Szybki start przedstawiono sposób przechowywania wpisu tajneg
 Przed kontynuowaniem upewnij się, że znasz [podstawowe pojęcia](https://docs.microsoft.com/azure/key-vault/key-vault-whatis#basic-concepts).
 
 > [!NOTE]
-> Aby przekonać się, dlaczego poniższy samouczek jest najlepszym rozwiązaniem, najpierw należy zapoznać się z kilkoma pojęciami. Usługa Key Vault to centralne repozytorium do programistycznego przechowywania wpisów tajnych. W tym celu aplikacje i użytkownicy muszą najpierw uwierzytelnić się w usłudze Key Vault, tj. podać wpis tajny. Zgodnie z najlepszymi rozwiązaniami dotyczącymi bezpieczeństwa pierwszy wpis tajny musi być okresowo obracany. Jednak aplikacje [tożsamości usługi zarządzanej](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview) uruchamiane na platformie Azure otrzymują tożsamość, która jest automatycznie zarządzana przez tę platformę. Dzięki temu można rozwiązać **początkowy problem dotyczący wpisu tajnego**, gdzie użytkownicy i aplikacje mogą postępować zgodnie z najlepszymi praktykami i nie muszą pamiętać o obracaniu pierwszego wpisu tajnego
+> Aby przekonać się, dlaczego poniższy samouczek jest najlepszym rozwiązaniem, najpierw należy zapoznać się z kilkoma pojęciami. Usługa Key Vault to centralne repozytorium do programistycznego przechowywania wpisów tajnych. W tym celu aplikacje i użytkownicy muszą najpierw uwierzytelnić się w usłudze Key Vault, tj. podać wpis tajny. Zgodnie z najlepszymi rozwiązaniami dotyczącymi bezpieczeństwa pierwszy wpis tajny musi być okresowo obracany. Jednak gdy są używane [tożsamości usługi zarządzanej](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview), aplikacje działające na platformie Azure otrzymują tożsamość, która jest automatycznie zarządzana przez tę platformę. Dzięki temu można rozwiązać **początkowy problem dotyczący wpisu tajnego**, gdzie użytkownicy i aplikacje mogą postępować zgodnie z najlepszymi praktykami i nie muszą pamiętać o obracaniu pierwszego wpisu tajnego
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
+* [Node JS](https://nodejs.org/en/)
+::: zone-end
+::: zone pivot="dotnet"
 * [Visual Studio 2017 w wersji 15.7.3 lub nowszej](https://www.microsoft.com/net/download/windows) z następującymi obciążeniami:
   * Tworzenie aplikacji na platformie ASP.NET i aplikacji internetowej
   * Tworzenie aplikacji dla wielu platform w środowisku .NET Core
-* [Zestaw .NET Core 2.1 SDK lub nowszy](https://www.microsoft.com/net/download/windows) :::zone-end
+* [Zestaw .NET Core 2.1 SDK lub nowszy](https://www.microsoft.com/net/download/windows)
+::: zone-end
 * Git ([pobieranie](https://git-scm.com/downloads)).
 * Subskrypcja platformy Azure. Jeśli nie masz subskrypcji platformy Azure, przed rozpoczęciem utwórz [bezpłatne konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 * [Interfejs wiersza polecenia platformy Azure](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) w wersji 2.0.4 lub nowszej. Jest on dostępny w systemach Windows, Mac i Linux.
@@ -110,7 +113,10 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
 
 ## <a name="install-dependencies"></a>Instalowanie zależności
 
-W tym miejscu zainstalujemy zależności. Uruchom następujące polecenia cd key-vault-node-quickstart npm install
+W tym miejscu zainstalujemy zależności. Uruchom następujące polecenia:
+
+    cd key-vault-node-quickstart
+    npm install
 
 W tym projekcie używane są 2 moduły platformy node:
 
@@ -119,14 +125,14 @@ W tym projekcie używane są 2 moduły platformy node:
 
 ## <a name="publish-the-web-application-to-azure"></a>Publikowanie aplikacji internetowej na platformie Azure
 
-Poniżej przedstawiono kilka wymaganych kroków
+Poniżej przedstawiono kilka wymaganych kroków w celu opublikowania aplikacji na platformie Azure.
 
 * Pierwszy krok to utworzenie planu usługi [Azure App Service](https://azure.microsoft.com/services/app-service/). Ten plan pozwala na przechowywanie wielu aplikacji internetowych.
 
     ```azurecli
     az appservice plan create --name myAppServicePlan --resource-group myResourceGroup
     ```
-* Następnie utworzymy aplikację internetową. W poniższym przykładzie zastąp ciąg <app_name> globalnie unikatową nazwą aplikacji (prawidłowe znaki to a–z, 0–9 i -). Środowisko uruchomieniowe ma ustawioną wartość NODE|6.9. Aby wyświetlić wszystkie obsługiwane środowiska uruchomieniowe, uruchom polecenie az webapp list-runtimes
+* Następnie utworzymy aplikację internetową. W poniższym przykładzie zastąp ciąg <app_name> globalnie unikatową nazwą aplikacji (prawidłowe znaki to a–z, 0–9 i -). Środowisko uruchomieniowe ma ustawioną wartość NODE|6.9. Aby wyświetlić wszystkie obsługiwane środowiska uruchomieniowe, uruchom polecenie `az webapp list-runtimes`
 
     ```azurecli
     az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app_name> --runtime "NODE|6.9" --deployment-local-git
@@ -238,7 +244,8 @@ Upewnij się, że nazwa <YourKeyVaultName> została zastąpiona nazwą magazynu
 
 ::: zone-end
 
-::: zone pivot="dotnet" Teraz po uruchomieniu aplikacji powinna pojawić się pobrana wartość wpisu tajnego.
+::: zone pivot="dotnet"
+Teraz, po uruchomieniu aplikacji, powinna pojawić się pobrana wartość wpisu tajnego.
 ::: zone-end
 
 ## <a name="next-steps"></a>Kolejne kroki
@@ -247,10 +254,12 @@ Upewnij się, że nazwa <YourKeyVaultName> została zastąpiona nazwą magazynu
 * [Strona główna usługi Azure Key Vault](https://azure.microsoft.com/services/key-vault/)
 * [Dokumentacja usługi Azure Key Vault](https://docs.microsoft.com/azure/key-vault/)
 * [Zestaw Azure SDK dla platformy Node](https://docs.microsoft.com/javascript/api/overview/azure/key-vault)
-* [Dokumentacja interfejsów API REST platformy Azure](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Dokumentacja interfejsu API REST platformy Azure](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end
 
 ::: zone pivot="dotnet"
 * [Strona główna usługi Azure Key Vault](https://azure.microsoft.com/services/key-vault/)
 * [Dokumentacja usługi Azure Key Vault](https://docs.microsoft.com/azure/key-vault/)
 * [Zestaw Azure SDK dla platformy .NET](https://github.com/Azure/azure-sdk-for-net)
-* [Dokumentacja interfejsów API REST platformy Azure](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Dokumentacja interfejsu API REST platformy Azure](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end

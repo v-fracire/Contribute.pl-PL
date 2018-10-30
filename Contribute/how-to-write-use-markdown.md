@@ -2,18 +2,18 @@
 title: Jak używać języka Markdown do tworzenia zawartości witryny Docs
 description: Ten artykuł zawiera podstawy i informacje referencyjne dotyczące języka znaczników Markdown używanego do pisania artykułów w witrynie docs.microsoft.com.
 ms.date: 07/13/2017
-ms.openlocfilehash: dca1ccba2ae4ebd08b6039f5d780e7a7ac92e79f
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238971"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805734"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Jak używać języka Markdown do tworzenia zawartości witryny Docs
 
-Artykuły w witrynie docs.microsoft.com są pisane w prostym języku znaczników o nazwie [Markdown](https://daringfireball.net/projects/markdown/), który jest łatwy do czytania i do nauczenia się. Z tego względu stał się on szybko branżowym standardem.
+Artykuły w witrynie [docs.microsoft.com](http://docs.microsoft.com) są pisane w prostym języku znaczników o nazwie [Markdown](https://daringfireball.net/projects/markdown/), który jest łatwy do czytania i do nauczenia się. Z tego względu stał się on szybko branżowym standardem.
 
-Ponieważ zawartość witryny Docs jest przechowywana w serwisie GitHub, może korzystać z nadzbioru znaczników Markdown o nazwie [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), który oferuje dodatkowe funkcje spełniające typowe potrzeby związane z formatowaniem. Ponadto platforma Open Publishing Services (OPS) implementuje parser języka Markdown o nazwie Markdig. Parser Markdig jest w wysokim stopniu zgodny z językiem GitHub Flavored Markdown (GFM), dodając funkcjonalność włączania funkcji specyficznych dla dokumentów.
+Ponieważ zawartość witryny Docs jest przechowywana w serwisie GitHub, może korzystać z nadzbioru znaczników Markdown o nazwie [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), który oferuje dodatkowe funkcje spełniające typowe potrzeby związane z formatowaniem. Ponadto platforma Open Publishing Services (OPS) implementuje parser języka Markdown o nazwie Markdig. Parser Markdig jest w wysokim stopniu zgodny z językiem GFM, dodając funkcjonalność włączania funkcji specyficznych dla dokumentów.
 
 * Parser Markdig jest szybkim, wydajnym, zgodnym ze składnią CommonMark, rozszerzalnym procesorem języka Markdown dla platformy .NET.
 * https://github.com/lunet-io/markdig
@@ -27,10 +27,10 @@ Ponieważ zawartość witryny Docs jest przechowywana w serwisie GitHub, może k
 Aby utworzyć nagłówek, użyj znaku skrótu (#) w następujący sposób:
 
 ```markdown
-    # This is heading 1
-    ## This is heading 2
-    ### This is heading 3
-    #### This is heading 4
+# This is heading 1
+## This is heading 2
+### This is heading 3
+#### This is heading 4
 ```
 
 ### <a name="bold-and-italic-text"></a>Tekst pogrubiony i kursywa
@@ -38,19 +38,19 @@ Aby utworzyć nagłówek, użyj znaku skrótu (#) w następujący sposób:
 Aby sformatować tekst jako **pogrubiony**, umieść go między podwójnymi gwiazdkami:
 
 ```markdown
-    This text is **bold**.
+This text is **bold**.
 ```
 
 Aby sformatować tekst jako *kursywę*, umieść go między pojedynczymi gwiazdkami:
 
 ```markdown
-    This text is *italic*.
+This text is *italic*.
 ```
 
 Aby sformatować tekst jako ***pogrubiony i kursywę***, umieść go między potrójnymi gwiazdkami:
 
 ```markdown
-    This is text is both ***bold and italic***.
+This is text is both ***bold and italic***.
 ```
 
 ### <a name="lists"></a>Listy
@@ -107,16 +107,16 @@ Aby zagnieździć listę wewnątrz innej listy, należy utworzyć wcięcie podrz
 
 ```markdown
 1. First instruction
-    1. Sub-instruction
-    2. Sub-instruction
+   1. Sub-instruction
+   2. Sub-instruction
 2. Second instruction
 ```
 
 zostanie wyświetlony jako:
 
 1. Pierwsza instrukcja
-    1. Instrukcja podrzędna
-    2. Instrukcja podrzędna
+   1. Instrukcja podrzędna
+   2. Instrukcja podrzędna
 2. Druga instrukcja
 
 ### <a name="tables"></a>tabelami
@@ -145,12 +145,12 @@ zostanie wyświetlony jako:
 
 Więcej informacji na temat tworzenia tabel można znaleźć w następujących zasobach:
 
-- [Funkcja zawijania tabel](#table-wrapping) parsera Markdig, która może ułatwić formatowanie szerokich tabel
-- Artykuł [Organizing information with tables](https://help.github.com/articles/organizing-information-with-tables/) (Organizowanie informacji przy użyciu tabel) w serwisie GitHub
-- Aplikacja internetowa [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables)
-- [Markdown Cheatsheet, autor: Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables) (Ściągawka dotycząca języka Markdown)
-- [Markdown Extra, autor: Michel Fortin](https://michelf.ca/projects/php-markdown/extra/#table)
-- [Konwertowanie tabel HTML na znaczniki języka Markdown](https://jmalarcon.github.io/markdowntables/)
+- [Funkcja zawijania tabel](#table-wrapping) parsera Markdig, która może ułatwić formatowanie szerokich tabel.
+- Artykuł [Organizing information with tables (Organizowanie informacji przy użyciu tabel)](https://help.github.com/articles/organizing-information-with-tables/) w usłudze GitHub.
+- Aplikacja internetowa [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables).
+- [Markdown Cheatsheet (Ściągawka dotycząca języka Markdown), autor: Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables).
+- [Markdown Extra, autor: Michel Fortin](https://michelf.ca/projects/php-markdown/extra/#table).
+- [Konwertowanie tabel HTML na znaczniki języka Markdown](https://jmalarcon.github.io/markdowntables/).
 
 ### <a name="links"></a>Linki
 
@@ -212,6 +212,7 @@ Te języki obsługują przyjazne nazwy i w większości obsługują wyróżniani
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
+|R|r|
 |Ruby|ruby|
 |SQL|sql|
 |Swift|swift|
@@ -336,18 +337,19 @@ Parser Markdig obsługuje zaawansowane dołączanie kodu do artykułu za pośred
 Nie można prawidłowo renderować tekstu alternatywnego, który zawiera znaki podkreślenia. Na przykład zamiast używać tego:
 
 ```markdown
-![ADextension_2FA_Configure_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 Omiń podkreślenia w następujący sposób:
 
 ```markdown
-![ADextension\_2FA\_Configure\_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 ### <a name="apostrophes-and-quotation-marks"></a>Apostrofy i cudzysłowy
 
-W przypadku kopiowania z programu Word do edytora języka Markdown tekst może zawierać „eleganckie” (zawinięte) apostrofy lub cudzysłowy. Należy je zakodować lub zmienić na podstawowe apostrofy lub znaki cudzysłowu. W przeciwnym razie po opublikowaniu pliku otrzymasz coś takiego: Itâ€™s
+W przypadku kopiowania z programu Word do edytora języka Markdown tekst może zawierać „eleganckie” (zawinięte) apostrofy lub cudzysłowy. Należy je zakodować lub zmienić na podstawowe apostrofy lub znaki cudzysłowu.
+W przeciwnym razie po opublikowaniu pliku otrzymasz coś takiego: Itâ€™s
 
 Oto sposoby kodowania „eleganckich” wersji tych znaków interpunkcyjnych:
 
@@ -358,14 +360,15 @@ Oto sposoby kodowania „eleganckich” wersji tych znaków interpunkcyjnych:
 
 ### <a name="angle-brackets"></a>Nawiasy kątowe
 
-Jeśli w tekście (nie kodzie) pliku używasz nawiasów kątowych — na przykład w celu oznaczenia symbolu zastępczego — zakoduj je ręcznie. W przeciwnym razie w języku Markdown nawiasy kątowe zostaną potraktowane jak tag HTML.
+Często stosuje się nawiasy kątowe w celu oznaczenia symbolu zastępczego. W przypadku użycia nawiasów kątowych w tekście (nie w kodzie) należy je zakodować. W przeciwnym razie w języku Markdown nawiasy kątowe zostaną potraktowane jak tag HTML.
 
 Na przykład `<script name>` należy zakodować jako `&lt;script name&gt;`
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz też:
 
 ### <a name="markdown-resources"></a>Zasoby dotyczące języka Markdown
 
 - [Introduction to Markdown](https://daringfireball.net/projects/markdown/syntax) (Wprowadzenie do języka Markdown)
 - [Docs Markdown cheat-sheet (Ściągawka dotycząca języka Markdown w witrynie Docs)](./media/documents/markdown-cheatsheet.pdf?raw=true)
 - [GitHub's Markdown Basics](https://help.github.com/articles/markdown-basics/) (Podstawy języka Markdown w serwisie GitHub)
+- [The Markdown Guide](https://www.markdownguide.org/)

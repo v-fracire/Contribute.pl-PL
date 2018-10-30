@@ -1,20 +1,19 @@
 ---
-title: Docs Authoring Pack for VS Code
-description: W tym artykule opisano pakiet rozszerzenia programu VS Code ułatwiający tworzenie dokumentów w formacie Markdown dla witryny docs.microsoft.com.
+title: Pakiet Docs Authoring Pack dla programu Visual Studio Code
+description: W tym artykule opisano pakiet rozszerzenia programu Visual Studio Code ułatwiający tworzenie dokumentów w formacie Markdown dla witryny docs.microsoft.com.
 author: meganbradley
 ms.author: mbradley
-manager: jemash
-ms.date: 04/06/2018
-ms.openlocfilehash: b9fedce0a73c5c4212ffd0893c745fab56677c8c
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.date: 10/22/2018
+ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308921"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805659"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Docs Authoring Pack for VS Code
 
-Docs Authoring Pack to kolekcja rozszerzeń programu VS Code, które wspomagają tworzenie dokumentów w formacie Markdown dla witryny docs.microsoft.com. Pakiet jest [dostępny w witrynie VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) i zawiera następujące rozszerzenia:
+Pakiet Docs Authoring Pack to kolekcja rozszerzeń programu Visual Studio Code, które wspomagają tworzenie dokumentów w formacie Markdown dla witryny docs.microsoft.com. Pakiet jest [dostępny w witrynie VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) i zawiera następujące rozszerzenia:
 
 - [markdownlint:](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) popularny linter języka Markdown autorstwa Davida Ansona, który pomaga w korzystaniu z najlepszych rozwiązań języka Markdown.
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): działający całkowicie w trybie offline moduł sprawdzania pisowni autorstwa firmy Street Side Software.
@@ -103,7 +102,7 @@ Rozszerzenie szablonów obsługuje trzy dynamiczne pola metadanych: author, ms.a
 |----------|---------------|
 |author    |Twój identyfikator GitHub, jeśli został określony w pliku ustawień programu VS Code.|
 |ms.author |Twój alias Microsoft, jeśli został określony w pliku ustawień programu VS Code. Jeśli nie jesteś pracownikiem firmy Microsoft, pozostaw to pole nieokreślone.|
-|ms.date   |Bieżąca data w formacie obsługiwanym przez rozszerzenie Docs, MM/DD/RRRR. Zwróć uwagę, że data nie jest automatycznie aktualizowana podczas dokonywania przez Ciebie kolejnych aktualizacji pliku — musisz aktualizować ją ręcznie, aby wskazać datę odświeżenia datę artykułu.|
+|ms.date   |Bieżąca data w formacie obsługiwanym przez rozszerzenie Docs, MM/DD/RRRR. Pamiętaj, że data nie jest automatycznie aktualizowana w przypadku późniejszej aktualizacji pliku. Należy ręcznie zaktualizować wartość ms.date, aby wskazać najnowszą datę publikacji w witrynie docs.microsoft.com.|
 
 ### <a name="to-set-author-github-id-andor-msauthor-microsoft-alias"></a>Aby ustawić wartości pól author (identyfikator GitHub) i/lub ms.author (alias Microsoft)
 

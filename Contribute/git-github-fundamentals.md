@@ -2,12 +2,12 @@
 title: Git i GitHub — podstawy dla witryny Docs
 description: Ten artykuł zawiera omówienie usługi GitHub, repozytorium GitHub, sposobu organizowania zawartości oraz konwencji nazewnictwa używanych dla witryny docs.microsoft.com.
 ms.date: 06/30/2017
-ms.openlocfilehash: 8a116067fdd7d031c560abfb7055236e0bfb1a3d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805705"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Git i GitHub — podstawy dla witryny Docs
 
@@ -30,8 +30,8 @@ Usługa Git używa również struktury warstwowej do przechowywania zawartości 
 
 Współautorzy używają usługi Git do aktualizowania repozytoriów i manipulowania nimi lokalnie oraz na poziomie usługi GitHub:
 
-- W środowisku lokalnym za pośrednictwem narzędzi, takich jak konsola Bash usługi Git, która obsługuje polecenia usługi Git służące do zarządzania repozytoriami lokalnymi i komunikowania się z repozytoriami GitHub.
-- W witrynie [www.github.com](https://www.github.com), która umożliwia integrowanie usługi Git w celu uzgadniania elementów tworzonych przez współautorów i przekazywanych z powrotem do głównego repozytorium
+- W środowisku lokalnym za pośrednictwem narzędzi takich jak konsola Bash usługi Git, która obsługuje polecenia usługi Git służące do zarządzania repozytoriami lokalnymi i komunikowania się z repozytoriami usługi GitHub.
+- W witrynie [www.github.com](https://www.github.com), która umożliwia integrowanie usługi Git w celu uzgadniania elementów tworzonych przez współautorów i przekazywanych z powrotem do głównego repozytorium.
 
 ## <a name="github"></a>GitHub
 
@@ -46,7 +46,7 @@ Wszystkie przepływy rozpoczynają się i kończą na poziomie usługi GitHub, w
 
 Jak wspomniano wcześniej, domyślna/główna gałąź projektu działa jak bieżąca wersja zawartości projektu. Zawartość głównej gałęzi — i gałęzi utworzonych na jej podstawie — jest luźno powiązana z organizacją artykułów na odpowiednich stronach witryny Docs. Podkatalogi są używane do oddzielania podobnej zawartości (takiej jak usługi), zawartości multimedialnej (takiej jak pliki obrazów) i plików dołączanych, które umożliwiają wielokrotne użycie zawartości.
 
-Zwykle katalog główny `articles` znajduje się poza katalogiem głównym repozytorium. Katalog articles zawiera zbiór podkatalogów. Artykuły w podkatalogach są sformatowane jako pliki Markdown z rozszerzeniem *.md*. Niektóre repozytoria, które obsługują wiele usług, takie jak repozytorium [https://github.com/microsoft/Azure-Docs](https://github.com/microsoft/Azure-Docs), korzystają z ogólnego podkatalogu `/articles`. Inne mogą używać nazwy powiązanej z usługą, takiej jak repozytorium [https://github.com/microsoft/IntuneDocs](https://github.com/microsoft/IntuneDocs), które korzysta z katalogu `/IntuneDocs`.
+Zwykle katalog główny `articles` znajduje się poza katalogiem głównym repozytorium. Katalog articles zawiera zbiór podkatalogów. Artykuły w podkatalogach są sformatowane jako pliki Markdown z rozszerzeniem *.md*. Niektóre repozytoria, które obsługują wiele usług, korzystają z ogólnego podkatalogu `/articles`. Tak jest na przykład w przypadku repozytorium [Azure-Docs](https://github.com/MicrosoftDocs/Azure-Docs). Inne mogą używać nazwy powiązanej z usługą, takiej jak repozytorium [IntuneDocs](https://github.com/MicrosoftDocs/IntuneDocs), które korzysta z katalogu `/IntuneDocs`.
 
 W katalogu głównym tego katalogu można znaleźć ogólne artykuły dotyczące usługi lub produktu jako całości. Przeważnie można potem przejść do innego zestawu podkatalogów odpowiadających funkcjom/usługom lub typowym scenariuszom. Na przykład artykuły typu „maszyna wirtualna” platformy Azure znajdują się w podkatalogu `/virtual-machines`, artykuły typu „poznawanie i eksplorowanie” dotyczące usługi Intune — w podkatalogu `/understand-explore`.
 
