@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 921c63c2748149543bfc73e4b38278a2ed74ac56
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: dab2de80654fb55382b2ca7c9f78df36df9971dc
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805797"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609366"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Przewodnik współautora witryny Microsoft Docs — omówienie
 
@@ -37,10 +37,12 @@ Szybkie edycje usprawniają proces zgłaszania i naprawiania drobnych błędów 
 
 Następnie kliknij ikonę ołówka pokazaną na poniższym rysunku, aby edytować artykuł.
 
-> [!NOTE]
-> Jeśli ikona ołówka jest nieaktywna, musisz zalogować się do konta usługi GitHub lub utworzyć nowe konto. Wprowadź zmiany w edytorze internetowym. Możesz kliknąć kartę **Podgląd zmian**, aby sprawdzić formatowanie zmiany.
-
 ![Lokalizacja ikony ołówka](./media/index/editicon.png)
+
+> [!NOTE]
+> Jeśli ikona ołówka jest nieaktywna, musisz zalogować się do konta usługi GitHub lub utworzyć nowe konto.
+
+Wprowadź zmiany w edytorze internetowym. Możesz kliknąć kartę **Podgląd zmian**, aby sprawdzić formatowanie zmiany.
 
 Po wprowadzeniu zmian przewiń stronę w dół. Wprowadź tytuł i opis żądania ściągnięcia, a następnie kliknij pozycję **Zaproponuj zmianę pliku**, jak pokazano na poniższym rysunku:
 
