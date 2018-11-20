@@ -2,12 +2,12 @@
 title: Jak używać języka Markdown do tworzenia zawartości witryny Docs
 description: Ten artykuł zawiera podstawy i informacje referencyjne dotyczące języka znaczników Markdown używanego do pisania artykułów w witrynie docs.microsoft.com.
 ms.date: 07/13/2017
-ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805734"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609527"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Jak używać języka Markdown do tworzenia zawartości witryny Docs
 
@@ -33,6 +33,14 @@ Aby utworzyć nagłówek, użyj znaku skrótu (#) w następujący sposób:
 #### This is heading 4
 ```
 
+Nagłówki powinny być tworzone przy użyciu stylu atx — w celu oznaczenia nagłówka wprowadź od 1 do 6 znaków numeru (#) na początku wiersza. Znaki te odpowiadają poziomom nagłówków HTML (od H1 do H6). W powyższym przykładzie użyto czterech poziomów nagłówków.
+
+W temacie **może** znajdować się tylko jeden nagłówek pierwszego poziomu (H1), który będzie wyświetlany jako tytuł strony.
+
+Aby zapewnić prawidłowe renderowanie tytułu z nagłówkiem, który kończy się znakiem `#`, na końcu musisz wprowadzić dodatkowy znak `#`. Na przykład `# Async Programming in F# #`.
+
+Nagłówki drugiego poziomu generują spis treści, który jest widoczny w sekcji „W tym artykule” znajdującej się pod tytułem.
+
 ### <a name="bold-and-italic-text"></a>Tekst pogrubiony i kursywa
 
 Aby sformatować tekst jako **pogrubiony**, umieść go między podwójnymi gwiazdkami:
@@ -52,6 +60,18 @@ Aby sformatować tekst jako ***pogrubiony i kursywę***, umieść go między pot
 ```markdown
 This is text is both ***bold and italic***.
 ```
+
+### <a name="blockquotes"></a>Cytat blokowy
+
+Do tworzenia cytatu blokowego służy znak `>`:
+
+```markdown
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
+```
+
+Powyższy przykład zostanie wyrenderowany następująco:
+
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
 
 ### <a name="lists"></a>Listy
 
@@ -93,8 +113,8 @@ Aby sformatować listę uporządkowaną/zawierającą kroki w kolejności ich wy
 
 ```markdown
 1. First instruction
-2. Second instruction
-3. Third instruction
+1. Second instruction
+1. Third instruction
 ```
 
 zostanie wyświetlony jako:
@@ -108,8 +128,8 @@ Aby zagnieździć listę wewnątrz innej listy, należy utworzyć wcięcie podrz
 ```markdown
 1. First instruction
    1. Sub-instruction
-   2. Sub-instruction
-2. Second instruction
+   1. Sub-instruction
+1. Second instruction
 ```
 
 zostanie wyświetlony jako:
@@ -118,6 +138,8 @@ zostanie wyświetlony jako:
    1. Instrukcja podrzędna
    2. Instrukcja podrzędna
 2. Druga instrukcja
+
+Zwróć uwagę, że użyto numeru „1” we wszystkich pozycjach. Ułatwia to dostrzeganie różnic powstałych w efekcie dodania lub usunięcia kroków w kolejnych aktualizacjach.
 
 ### <a name="tables"></a>tabelami
 
@@ -194,6 +216,8 @@ Te języki obsługują przyjazne nazwy i w większości obsługują wyróżniani
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
 |C#|csharp|
+|C# w przeglądarce|csharp-interactive|
+|Konsola|console|
 |CSHTML|cshtml|
 |DAX|dax|
 |F#|fsharp|
@@ -221,6 +245,8 @@ Te języki obsługują przyjazne nazwy i w większości obsługują wyróżniani
 |VSTS CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
+
+Nazwa `csharp-interactive` określa język C# oraz wskazuje na możliwość uruchamiania przykładów w przeglądarce. Te fragmenty kodu są kompilowane i wykonywane w kontenerze platformy Docker, a wyniki wykonywania programu są wyświetlane w oknie przeglądarki użytkownika.
 
 #### <a name="example-c"></a>Przykład: C\#
 
@@ -256,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -265,8 +291,8 @@ __Renderowanie__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -296,6 +322,36 @@ Aby zwrócić uwagę czytelnika na określoną zawartość, można wybrać jeden
 
 Ogólnie rzecz biorąc, bloków uwag należy używać oszczędnie, ponieważ mogą zaburzać czytelność artykułu. Obsługują one również bloki kodu, obrazy, listy i linki, ale należy starać się, aby były proste i czytelne.
 
+Przykłady:
+
+```markdown
+> [!NOTE]
+> This is a NOTE
+
+> [!WARNING]
+> This is a WARNING
+
+> [!TIP]
+> This is a TIP
+
+> [!IMPORTANT]
+> This is IMPORTANT
+```
+
+Zostaną one wyrenderowane następująco:
+
+> [!NOTE]
+> To jest UWAGA
+
+> [!WARNING]
+> To jest OSTRZEŻENIE
+
+> [!TIP]
+> To jest PORADA
+
+> [!IMPORTANT]
+> To jest WAŻNE
+
 ### <a name="includes"></a>Operacje dołączania
 
 Jeśli masz pliki tekstu lub obrazów do wielokrotnego użytku, które chcesz dołączyć do plików artykułu, możesz użyć odwołania do pliku dołączania za pomocą funkcji dołączania plików w parserze Markdig. Ta funkcja nakazuje platformie OPS dołączenie pliku do pliku artykułu podczas kompilacji, co sprawia, że plik staje się częścią publikowanego artykułu. Istnieją trzy typy operacji dołączania, które ułatwiają wielokrotne użycie zawartości:
@@ -317,13 +373,29 @@ Poniżej przedstawiono wymagania i uwagi dotyczące operacji dołączania:
 - Podobnie jak w przypadku zwykłych artykułów nie należy udostępniać multimediów między dołączanymi plikami. Użyj oddzielnego pliku z unikatową nazwą dla każdego dołączenia i artykułu. Plik multimedialny należy przechowywać w folderze media skojarzonym z dołączeniem.
 - Nie należy używać dołączenia jako jedynej zawartości artykułu.  Operacje dołączania mają stanowić uzupełnienie pozostałej zawartości artykułu.
 
+Przykład:
+
+```markdown
+[!INCLUDE[sample include file](../includes/sampleinclude.md)]
+```
+
 ### <a name="selectors"></a>Selektory
 
 Selektorów należy używać w tworzonych artykułach technicznych z wieloma wariantami tego samego artykułu w celu przedstawienia różnic między implementacjami w ramach różnych technologii lub platform. Ma to przeważnie zastosowanie w przypadku mobilnej zawartości platformy dla deweloperów. Obecnie w parserze Markdig istnieją dwa różne typy selektorów: selektor pojedynczy i selektor wielokrotny.
 
 Ponieważ ten sam kod języka Markdown selektora znajduje się w każdym artykule w zaznaczeniu, zalecamy umieszczanie selektora artykułu w dołączeniu. Następnie można się odwołać do tego dołączenia we wszystkich artykułach, które używają tego samego selektora.
 
-### <a name="code-snippets"></a>Fragmenty kodu
+Poniżej znajduje się przykładowy selektor:
+
+```markdown
+> [!div class="op_single_selector"]
+- [macOS](../docs/core/tutorials/using-on-macos.md)
+- [Windows](../docs/core/tutorials/with-visual-studio.md)
+```
+
+Przykładowe selektory można znaleźć w [dokumentacji platformy Azure](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic).
+
+### <a name="code-includes"></a>Operacje dołączania kodu
 
 Parser Markdig obsługuje zaawansowane dołączanie kodu do artykułu za pośrednictwem rozszerzenia fragmentu kodu. Oferuje ono zaawansowane możliwości renderowania współpracujące z funkcjami GFM, takie jak wybór języka programowania i kolorowanie składni, oraz użyteczne funkcje, takie jak:
 
@@ -348,8 +420,7 @@ Omiń podkreślenia w następujący sposób:
 
 ### <a name="apostrophes-and-quotation-marks"></a>Apostrofy i cudzysłowy
 
-W przypadku kopiowania z programu Word do edytora języka Markdown tekst może zawierać „eleganckie” (zawinięte) apostrofy lub cudzysłowy. Należy je zakodować lub zmienić na podstawowe apostrofy lub znaki cudzysłowu.
-W przeciwnym razie po opublikowaniu pliku otrzymasz coś takiego: Itâ€™s
+W przypadku kopiowania z programu Word do edytora języka Markdown tekst może zawierać „eleganckie” (zawinięte) apostrofy lub cudzysłowy. Należy je zakodować lub zmienić na podstawowe apostrofy lub znaki cudzysłowu. W przeciwnym razie po opublikowaniu pliku otrzymasz coś takiego: Itâ€™s
 
 Oto sposoby kodowania „eleganckich” wersji tych znaków interpunkcyjnych:
 

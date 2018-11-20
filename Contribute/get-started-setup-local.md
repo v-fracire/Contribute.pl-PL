@@ -4,12 +4,12 @@ description: Ten artykuł zawiera wskazówki dotyczące tworzenia lokalnego repo
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 5373bf34399105c15caabe0abdc1ea0692c46a4a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805682"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609504"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Konfigurowanie lokalnego repozytorium Git na potrzeby dokumentacji
 
@@ -41,7 +41,7 @@ Jeśli dopiero zaczynasz pracę z usługą GitHub, obejrzyj poniższy film w cel
 
 Dokumentacja, która jest obsługiwana w witrynie [docs.microsoft.com](https://docs.microsoft.com), znajduje się w różnych repozytoriach witryny [github.com](https://www.github.com).
 
-1. Jeśli nie masz pewności, z którego repozytorium należy skorzystać, zajrzyj do artykułu w witrynie docs.microsoft.com, korzystając z przeglądarki sieci Web. Wybierz link **Edytuj** (ikona ołówka) w prawej górnej części tego artykułu.
+1. Jeśli nie masz pewności, z którego repozytorium należy skorzystać, zajrzyj do artykułu w witrynie [docs.microsoft.com](https://docs.microsoft.com), korzystając z przeglądarki internetowej. Wybierz link **Edytuj** (ikona ołówka) w prawej górnej części tego artykułu.
 
    ![Kliknij przycisk Edytuj, aby określić repozytorium i lokalizację pliku.](media/index/edit-article.png)
 

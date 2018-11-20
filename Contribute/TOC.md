@@ -11,6 +11,11 @@
 ## [Styl i ton — szybki start](style-quick-start.md)
 ## [Linki](how-to-write-links.md)
 ## [Docs Authoring Pack](how-to-write-docs-auth-pack.md)
+# Wskazówki dotyczące zestawu dokumentacji
+## [Dokumenty platformy .NET](dotnet-contribute.md)
+### [Współtworzenie dokumentów platformy .NET](dotnet-contribute-process.md)
+### [Konwencje stylistyczne dotyczące dokumentów platformy .NET](dotnet-style-guide.md)
+### [Wytyczne dotyczące stron czasowników i tonu](dotnet-voice-tone.md)
 
 <!--
 ## Creating new content

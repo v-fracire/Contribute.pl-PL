@@ -1,13 +1,15 @@
 ---
 title: Jak używać linków w dokumentacji
 description: Ten artykuł zawiera instrukcje dotyczące tworzenia linków do zawartości w witrynie docs.microsoft.com.
-ms.date: 06/29/2017
-ms.openlocfilehash: 1820ed9af561964d7afe0b29827ee43526c72489
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+author: gewarren
+ms.author: gewarren
+ms.date: 10/31/2018
+ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805774"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609435"
 ---
 # <a name="using-links-in-documentation"></a>Używanie linków w dokumentacji
 W tym artykule opisano, jak używać hiperlinków na stronach hostowanych w witrynie docs.microsoft.com. Linki można łatwo dodawać do znaczników markdown za pomocą kilku różnych konwencji. Linki wskazują użytkownikom zawartość na tej samej stronie, na stronach sąsiednich lub wskazują zewnętrzne witryny i adresy URL.
@@ -56,7 +58,7 @@ Aby utworzyć link w treści artykułu technicznego witryny Docs do innego artyk
 
   `[link text](../directory/article-name.md)`
 
-- Artykuł zawierający linki między zestawami dokumentów (nawet jeśli są tym samym repozytorium): `[link text](./directory/article-name)`
+- Artykuł zawierający linki między zestawami dokumentów (nawet jeśli są tym samym repozytorium):  `[link text](./directory/article-name)`
 
 > [!IMPORTANT]
 > Element `~/` nie jest używany jako część linku w żadnym z powyższych przykładów. W przypadku łączenia z ścieżką w katalogu głównym repozytorium rozpocznij od znaku `/`. Uwzględnienie elementu `~/` powoduje utworzenie nieprawidłowych linków podczas poruszania się między repozytoriami źródłowymi w witrynie GitHub. Rozpoczęcie ścieżki od znaki `/` umożliwia jej prawidłowe rozpoznanie.
@@ -84,17 +86,23 @@ Nie musisz tworzyć kotwic. Są one generowane automatycznie dla wszystkich nag�
 
 Pliki dołączania znajdują się w innym katalogu, dlatego należy użyć dłuższych ścieżek względnych. Aby utworzyć link do artykułu z pliku dołączania, użyj następującego formatu:
 
-    [link text](../articles/folder/article-name.md)
+   ```markdown
+   [link text](../articles/folder/article-name.md)
+   ```
 
 ## <a name="links-in-selectors"></a>Linki w selektorach
 
-Jeśli masz selektory, które są osadzone w pliku dołączania — tak jak zespół dokumentacji platformy Azure — użyj następującej struktury linku:
+Selektor jest składnikiem nawigacji wyświetlanym w artykule w postaci listy rozwijanej. Wybranie wartości na liście rozwijanej powoduje otwarcie odpowiedniego artykułu w przeglądarce. Lista selektora często zawiera linki do ściśle powiązanych artykułów, na przykład takich, w których omawiane jest to samo zagadnienie w wielu językach programowania, lub do serii artykułów, które mają bliski związek ze sobą. 
 
-    > [AZURE.SELECTOR-LIST (Lista_rozwijana1 | Lista_rozwijana2 )]
-    - [(Tekst1 | Przykład1 )](../articles/folder/article-name1.md)
-    - [(Tekst1 | Przykład2 )](../articles/folder/article-name2.md)
-    - [(Tekst2 | Przykład3 )](../articles/folder/article-name3.md)
-    - [(Tekst2 | Przykład4 )](../articles/folder/article-name4.md) -->
+Jeśli masz selektory, które są osadzone w pliku dołączania, użyj następującej struktury linku:
+
+   ```markdown
+   > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
+   - [(Text1 | Example1 )](../articles/folder/article-name1.md)
+   - [(Text1 | Example2 )](../articles/folder/article-name2.md)
+   - [(Text2 | Example3 )](../articles/folder/article-name3.md)
+   - [(Text2 | Example4 )](../articles/folder/article-name4.md) -->
+   ```
 
 ## <a name="reference-style-links"></a>Linki w stylu odwołania
 
@@ -102,23 +110,29 @@ Aby zawartość źródłowa była łatwiejsza do odczytania, możesz użyć link
 
 Tekst wbudowany:
 
-    I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```markdown
+   I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```
 
 Odwołania do linków na końcu artykułu:
 
-    <!--Reference links in article-->
-    [1]: http://google.com/
-    [2]: http://search.yahoo.com/
-    [3]: http://search.msn.com/
-
+   ```markdown
+   <!--Reference links in article-->
+   [1]: http://google.com/
+   [2]: http://search.yahoo.com/
+   [3]: http://search.msn.com/
+   ```
+   
 Upewnij się, że po dwukropku (przed linkiem) znajduje się spacja. Jeśli zapomnisz o wstawieniu spacji, tworząc linki do innych artykułów technicznych, w opublikowanym artykule linki te będą uszkodzone.
 
 ## <a name="links-to-pages-that-are-not-part-of-the-technical-documentation-set"></a>Linki do stron, które nie należą do zestawu dokumentacji technicznej
 
 Aby utworzyć link do strony w innej witrynie firmy Microsoft (na przykład do strony cennika, umowy SLA lub czegokolwiek innego, co nie jest artykułem dokumentacji), użyj bezwzględnego adresu URL, ale pomiń ustawienia regionalne. Należy tak zrobić, aby linki działały w usłudze GitHub i na renderowanej stronie:
 
-    [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
-
+   ```markdown
+   [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
+   ```
+   
 ## <a name="links-to-third-party-sites"></a>Linki do witryn innych firm
 
 Aby środowisko użytkownika było jak najlepsze, należy zminimalizować odsyłanie do innych witryn. Z tego powodu linki do witryn innych firm, których czasami potrzebujemy, należy tworzyć, uwzględniając:
@@ -146,7 +160,7 @@ Struktura adresu URL:
   - `/powershell/azure/<topic-file-name>[?view=<moniker-name>]`
   - `/powershell/azure/<service-name>/<topic-file-name>[?view=<moniker-name>]`
 
-Część zawierająca &lt;krótką nazwę&gt; jest opcjonalna. Jeśli zostanie pominięta, nastąpi przekierowanie do najnowszej wersji zawartości. Część zawierająca &lt;nazwę usługi&gt; to jeden z przykładów pokazanych w następujących podstawowych adresach URL:
+Część `<moniker-name>` jest opcjonalna. Jeśli zostanie pominięta, nastąpi przekierowanie do najnowszej wersji zawartości. Część `<service-name>` to jeden z przykładów pokazanych w następujących podstawowych adresach URL:
 
 - Zawartość usługi Azure PowerShell (AzureRM): [https://docs.microsoft.com/powershell/azure/](https://docs.microsoft.com/powershell/azure/)
 - Zawartość usługi Azure PowerShell (ASM): [https://docs.microsoft.com/powershell/azure/_servicemanagement_](https://docs.microsoft.com/powershell/azure/servicemanagement)

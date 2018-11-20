@@ -2,12 +2,12 @@
 title: 'Przepływ pracy dotyczący współtworzenia dokumentacji w usłudze GitHub: istotne lub długotrwałe zmiany'
 description: W tym artykule przedstawiono sposób korzystania z przepływu pracy dla współautorów w przypadku dokonywania istotnych zmian w artykułach w witrynie docs.microsoft.com.
 ms.date: 08/30/2017
-ms.openlocfilehash: 31f9421fc5edbc2f65c5ff20a86da08c70211ec7
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 93e659df4f72c6a272d15fd7487eb3a997bdf3c8
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239830"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609410"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>Przepływ pracy dotyczący współtworzenia dokumentacji w usłudze GitHub: istotne lub długotrwałe zmiany
 

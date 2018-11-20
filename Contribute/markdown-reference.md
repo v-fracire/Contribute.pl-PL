@@ -8,16 +8,16 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: e248eafb0247b200313ba198f2545eca947f5627
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805906"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609550"
 ---
 # <a name="markdown-reference-for-ops"></a>Dokumentacja języka Markdown dla platformy OPS
 
-Markdown to lekki język znaczników ze składnią formatowania zwykłego tekstu. Platforma OPS obsługuje standardową składnię CommonMark dla języka Markdown oraz niektóre niestandardowe rozszerzenia języka Markdown zaprojektowane w celu zapewnienia bogatszej zawartości w witrynie docs.microsoft.com. Ten artykuł zawiera alfabetyczną dokumentację dotyczącą użycia języka Markdown na platformie OPS na potrzeby witryny docs.microsoft.com.
+Markdown to lekki język znaczników ze składnią formatowania zwykłego tekstu. Platforma Open Publishing Services (OPS) obsługuje standardową składnię CommonMark dla języka Markdown oraz niektóre niestandardowe rozszerzenia języka Markdown zaprojektowane w celu udostępniania bardziej zaawansowanej zawartości w witrynie docs.microsoft.com. Ten artykuł zawiera alfabetyczną dokumentację dotyczącą użycia języka Markdown na platformie OPS na potrzeby witryny docs.microsoft.com.
 
 Aby tworzyć w języku Markdown, możesz użyć dowolnego edytora teksów. Jako edytora, który ułatwia wstawianie zarówno standardowej składni języka Markdown, jak i niestandardowych rozszerzeń platformy OPS, zalecamy użycie programu [VS Code](https://code.visualstudio.com/) z zainstalowanym pakietem [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack).
 
@@ -25,7 +25,7 @@ Platforma OPS wprowadziła standardy użycia parsera Markdig dla wszystkich nowy
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>Alerty (Uwaga, Porada, Ważne, Przestroga, Ostrzeżenie)
 
-Alerty i rozszerzenie języka Markdown specyficzne dla platformy OPS służą do tworzenia cytatów blokowych, które są renderowane w witrynie docs.microsoft.com z użyciem kolorów i ikon wskazujących istotną zawartość. Obsługiwane są następujące typy alertów:
+Alerty to specyficzne dla platformy OPS rozszerzenie języka Markdown. Służy ono do tworzenia cytatów blokowych, które są renderowane w witrynie docs.microsoft.com z użyciem kolorów i ikon wskazujących istotną zawartość. Obsługiwane są następujące typy alertów:
 
 ```markdown
 > [!NOTE]
@@ -220,7 +220,7 @@ Można użyć jednej z następujących składni:
 
 - Link automatyczny: `<xref:UID> or <xref:UID?displayProperty=nameWithType>`
 
-  Opcjonalny parametr zapytania `displayProperty` powoduje utworzenie tekstu z w pełni kwalifikowanym linkiem. Domyślnie tekst linku zawiera tylko nazwę składowej lub typu.
+  Opcjonalny parametr zapytania `displayProperty` powoduje utworzenie tekstu z w pełni kwalifikowanym linkiem. Domyślnie tekst linku zawiera tylko nazwę elementu członkowskiego lub typu.
 
 - Link języka Markdown: `[link text](xref:UID)`
   
@@ -304,14 +304,14 @@ Listy kontrolne są dostępne do użycia w witrynie docs.microsoft.com (wyłącz
 Ten przykład jest renderowany w witrynie docs.microsoft.com następująco:
 
 > [!div class="checklist"]
-> * List item 1
-> * List item 2
-> * List item 3
+> * Element listy 1
+> * Element listy 2
+> * Element listy 3
 
 Użyj list kontrolnych na początku lub na końcu artykułu, aby podsumować zawartość „Czego się nauczysz” lub „Co już wiesz”. Nie dodawaj przypadkowych list kontrolnych w swoich artykułach.
 <!-- is this guidance still accurate? -->
 
-## <a name="next-step-action"></a>Akcja Następny krok
+## <a name="next-step-action"></a>Akcja w następnym kroku
 
 Aby dodać przycisk akcji Następny krok do stron w witrynie docs.microsoft.com (wyłącznie), można użyć rozszerzenia niestandardowego.
 
@@ -384,7 +384,7 @@ Tekst poprzedzającego znacznika języka Markdown typu blockquote będzie render
 ... będzie renderowany w następujący sposób:
 
 > [!div class="op_single_selector"]
-> - [Universal Windows](how-to-write-use-markdown.md)
+> - [Platforma uniwersalna systemu Windows](how-to-write-use-markdown.md)
 > - [Windows Phone](how-to-write-use-markdown.md)
 > - [iOS](how-to-write-use-markdown.md)
 > - [Android](how-to-write-use-markdown.md)
@@ -412,16 +412,16 @@ Tekst poprzedzającego znacznika języka Markdown typu blockquote będzie render
 ... będzie renderowany w następujący sposób:
 
 > [!div class="op_multi_selector" title1="Platform" title2="Backend"]
-> - [(iOS | .NET)](how-to-write-workflows-major.md)
-> - [(iOS | JavaScript)](how-to-write-workflows-major.md)
-> - [(Windows universal C# | .NET)](how-to-write-workflows-major.md)
-> - [(Windows universal C# | Javascript)](how-to-write-workflows-major.md)
-> - [(Windows Phone | .NET)](how-to-write-workflows-major.md)
-> - [(Windows Phone | Javascript)](how-to-write-workflows-major.md)
-> - [(Android | .NET)](how-to-write-workflows-major.md)
-> - [(Android | Javascript)](how-to-write-workflows-major.md)
-> - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
-> - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
+> - [(iOS|.NET)](how-to-write-workflows-major.md)
+> - [(iOS|JavaScript)](how-to-write-workflows-major.md)
+> - [(Platforma uniwersalna systemu Windows — język C#|.NET)](how-to-write-workflows-major.md)
+> - [(Platforma uniwersalna systemu Windows — język C#|JavaScript)](how-to-write-workflows-major.md)
+> - [(Windows Phone|.NET)](how-to-write-workflows-major.md)
+> - [(Windows Phone|JavaScript)](how-to-write-workflows-major.md)
+> - [(Android|.NET)](how-to-write-workflows-major.md)
+> - [(Android|JavaScript)](how-to-write-workflows-major.md)
+> - [(Xamarin iOS|JavaScript)](how-to-write-workflows-major.md)
+> - [(Xamarin Android|Javascript)](how-to-write-workflows-major.md)
 
 <!-- uncomment and link when Cory's topic is live
 ## Tabbed content
@@ -431,7 +431,7 @@ Tabs are a Markdown extension for docs.microsoft.com that allow us to present di
 Because the syntax and requirements for tabbed content are fairly complex, they are documented separately in Tabbed Content.
 -->
 
-## <a name="tables"></a>Tabele
+## <a name="tables"></a>tabelami
 
 Najprostszym sposobem utworzenia tabeli w języku Markdown jest użycie kresek pionowych i wierszy. Aby utworzyć standardową tabelę z nagłówkiem, po pierwszym wierszu wstaw z wiersz w kreskami:
 
@@ -575,7 +575,7 @@ I zostanie wyświetlony w następujący sposób na opublikowanych stronach:
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
 
 > [!IMPORTANT]
-> Adres URL wideo CH9 powinien rozpoczynać się od `https` i kończyć na `/player`. W przeciwnym razie nastąpi osadzenie całej strony, a nie tylko filmu.
+> Adres URL filmu wideo CH9 powinien rozpoczynać się od `https` i kończyć na `/player`. W przeciwnym razie nastąpi osadzenie całej strony, a nie tylko filmu.
 
 ### <a name="uploading-new-videos"></a>Przekazywanie nowych wideo
 
