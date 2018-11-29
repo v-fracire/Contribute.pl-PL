@@ -16,6 +16,7 @@
 ### [Współtworzenie dokumentów platformy .NET](dotnet-contribute-process.md)
 ### [Konwencje stylistyczne dotyczące dokumentów platformy .NET](dotnet-style-guide.md)
 ### [Wytyczne dotyczące stron czasowników i tonu](dotnet-voice-tone.md)
+# [Dodatkowe zasoby](additional-resources.md)
 
 <!--
 ## Creating new content
@@ -79,4 +80,3 @@
 
      Open question: How to keep this up to date?
    -->
-## [Dodatkowe zasoby](additional-resources.md)
