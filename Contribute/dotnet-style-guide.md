@@ -2,12 +2,12 @@
 title: Szablon i ściągawka do artykułów dotyczących platformy .NET
 description: Ten artykuł zawiera podręczny szablon, który ułatwia tworzenie artykułów dla repozytoriów dokumentów platformy .NET
 ms.date: 11/07/2018
-ms.openlocfilehash: 8980f5e39213d8f2edd1d29e66d900f2c3d04bbc
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609744"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299665"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Szablon metadanych i szablon języka Markdown dla dokumentów platformy .NET
 
@@ -79,9 +79,11 @@ Zespół, który zajmuje się dokumentacją platformy .NET stosuje następujące
 - W większości przypadków używamy linków względnych. Unikamy używania elementu `~/`, ponieważ linki względne są rozpoznawane w źródle w usłudze GitHub. Jednak w przypadku linków do plików znajdujących się w repozytorium zależnym ścieżka jest podawana za pomocą znaku `~/`. Pliki z repozytorium zależnego znajdują się w innej lokalizacji w usłudze GitHub, dlatego linki względne nie zostaną poprawnie rozpoznane, niezależnie od tego, jak zostały napisane.
 - Dodanie specyfikacji języków C# i Visual Basic do dokumentacji platformy .NET odbywa się przez dołączenie źródła z repozytoriów języka. Źródła elementów markdown są zarządzane w repozytoriach [csharplang](https://github.com/dotnet/csharplang) i [vblang](https://github.com/dotnet/vblang).
 
-Linki do specyfikacji muszą prowadzić do katalogów źródłowych, które zawierają te specyfikacje. W przypadku języka C# jest to **~/_csharplang/spec**, a w przypadku języka VB jest to **~/_vblang/spec**.
+Linki do specyfikacji muszą prowadzić do katalogów źródłowych, które zawierają te specyfikacje. W przypadku języka C# jest to **~/_csharplang/spec**, a w przypadku języka VB jest to **~/_vblang/spec**, jak w poniższym przykładzie:
 
-- Przykład: `[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)`
+```markdown
+[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)
+```
 
 ### <a name="links-to-apis"></a>Linki do interfejsów API
 
@@ -111,13 +113,13 @@ Przykłady:
 - System.Exception.\#ctor staje się `System.Exception.%23ctor`
 - System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) staje się `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`
 
-Na stronie `https://xref.docs.microsoft.com/autocomplete` można znaleźć identyfikatory UID typów, listę przeciążeń składowych lub konkretną przeciążoną składową. Ciąg zapytania „?text=*\<type-member-name>*” identyfikuje typ lub składową, której identyfikatory UID chcesz wyświetlić. Na przykład element `https://xref.docs.microsoft.com/autocomplete?text=string.format` pobiera przeciążenia metody [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format). Narzędzie szuka udostępnionego parametru zapytania `text` w każdej części identyfikatora UID. Na przykład można wyszukiwać nazwę składowej (ToString), część nazwy składowej (ToStri), typ i nazwę składowej (Double.ToString) itp.
+Na stronie `https://xref.docs.microsoft.com/autocomplete` można znaleźć identyfikatory UID typów, listę przeciążeń składowych lub konkretną przeciążoną składową. Ciąg zapytania `?text=*\<type-member-name>*` identyfikuje typ lub składową, której identyfikatory UID chcesz wyświetlić. Na przykład element `https://xref.docs.microsoft.com/autocomplete?text=string.format` pobiera przeciążenia metody [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format). Narzędzie szuka udostępnionego parametru zapytania `text` w każdej części identyfikatora UID. Na przykład można wyszukiwać nazwę składowej (ToString), część nazwy składowej (ToStri), typ i nazwę składowej (Double.ToString) itp.
 
-Po dodaniu elementu \* (lub %2A) po identyfikatorze UID link reprezentuje stronę przeciążenia, a nie określony interfejs API. Możesz z tego skorzystać na przykład, gdy chcesz połączyć stronę [List\<T>.BinarySearch](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) w sposób ogólny, zamiast określonego przeciążenia, takiego jak [List\<T >.BinarySearch(T, IComparer\<T >)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_). Możesz też użyć elementu \*, aby utworzyć link do strony nieprzeciążonej składowej. Dzięki temu nie musisz dołączać listy parametrów w identyfikatorze UID.
+Po dodaniu elementu \* (lub `%2A`) po identyfikatorze UID link reprezentuje stronę przeciążenia, a nie określony interfejs API. Możesz z tego skorzystać na przykład, gdy chcesz połączyć stronę [List\<T>.BinarySearch](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) w sposób ogólny, zamiast określonego przeciążenia, takiego jak [List\<T >.BinarySearch(T, IComparer\<T >)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_). Możesz też użyć elementu \*, aby utworzyć link do strony nieprzeciążonej składowej. Dzięki temu nie musisz dołączać listy parametrów w identyfikatorze UID.
 
 Aby utworzyć link do określonego przeciążenia metody, musisz dołączyć w pełni kwalifikowane nazwy typów wszystkich parametrów metody. Na przykład element \<xref:System.DateTime.ToString> tworzy link do bezparametrowej metody [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString), a element \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)> tworzy link do metody [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_).
 
-Aby utworzyć link do typu ogólnego, takiego jak [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1), użyj znaku \` (%60), po którym podaj liczbę parametrów typu ogólnego. Na przykład element \<xref:System.Nullable%601> tworzy link do typu [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1), a element \<xref:System.Func%602> tworzy link do delegata [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2).
+Aby utworzyć link do typu ogólnego, takiego jak [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1), użyj znaku \` (`%60`), po którym podaj liczbę parametrów typu ogólnego. Na przykład element `<xref:System.Nullable%601>` tworzy link do typu [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1), a element `<xref:System.Func%602>` tworzy link do delegata [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2).
 
 ## <a name="code"></a>Kod
 
